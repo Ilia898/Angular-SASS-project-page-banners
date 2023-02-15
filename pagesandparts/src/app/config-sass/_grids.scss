@@ -1,0 +1,71 @@
+@use "sass:math";
+
+$grid-columens: 12;
+
+
+// base layout
+
+.container-grid-columens{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.row{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+// col
+
+@include xs {
+  @for $i from 1 through $grid-columens {
+    .col-#{$i}-xs {
+      box-sizing:  border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columens);
+    }
+  }
+}
+
+@include sm {
+  @for $i from 1 through $grid-columens {
+    .col-#{$i}-sm {
+      box-sizing:  border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columens);
+    }
+  }
+}
+
+@include md {
+  @for $i from 1 through $grid-columens {
+    .col-#{$i}-md {
+      box-sizing:  border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columens);
+    }
+  }
+}
+
+@include lg {
+  @for $i from 1 through $grid-columens {
+    .col-#{$i}-lg {
+      box-sizing:  border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columens);
+    }
+  }
+}
+
+@include xl {
+  @for $i from 1 through $grid-columens {
+    .col-#{$i}-xl {
+      box-sizing:  border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columens);
+    }
+  }
+}

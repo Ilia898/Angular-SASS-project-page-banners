@@ -1,0 +1,173 @@
+// variables & functions
+@import 'fonts';
+
+
+// base & layout
+@import 'responsive';
+@import 'grids';
+
+// colors
+@import 'color';
+
+// components (button, card, navbar etc)
+@mixin nav-menu () {
+  display: none;
+  position: absolute;
+  width: 100px;
+  color: $myPrimary1;
+  text-transform: capitalize;
+  text-decoration: none;
+  z-index: 1;
+  background: white;
+
+  a{
+    display: inline-block;
+    margin: 0;
+    padding: 10% 20% 10% 20%;
+    color: $myPrimary4-1;
+    text-decoration: none;
+
+    &:hover{ text-decoration: underline; }
+   }
+}
+
+
+@mixin a-btn(){
+  &:hover {
+    border: 1px solid $myPrimary5-1;
+    border-radius: 4px;
+  }
+}
+
+@mixin footer-a-menu(){
+  height: 52px;
+  display: flex;
+  border-top: 1px solid $myPrimary5;
+  justify-content: center;
+
+  .footer-menu1{
+    margin: auto;
+
+    a{
+      margin-left: 15px;
+      font-family: NsemiBold;
+      font-size: 15px;
+      color: $myPrimary4-1;
+      text-transform: capitalize;
+      text-decoration: none;
+
+      &:hover {text-decoration: underline;}
+    }
+  }
+}
+
+@mixin btn-hero($backColor) {
+  a{
+    margin-right: 15px;
+    padding: 7px 30px;
+    text-decoration: none;
+    font-family: NBold;
+    font-size: 15px;
+    color: $myPrimary6;
+    border-radius: 5px;
+    background: $backColor;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+
+    &:hover {box-shadow: none;}
+  }
+}
+
+@mixin btn-in($backColor) {
+    margin-right: 15px;
+    padding: 7px 30px;
+    text-decoration: none;
+    font-family: NBold;
+    font-size: 15px;
+    color: $myPrimary6;
+    border-radius: 5px;
+    background: $backColor;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+
+    &:hover {box-shadow: none;}
+}
+
+@mixin bannerA(){
+
+  @include blockMarginBorder(10px);
+  @include boxShadowA();
+  display: block;
+  padding: 3% 0;
+
+  @include lg {display: flex;}
+
+  .banerA-image{
+    display: flex;
+    height: 100%;
+
+    img{
+      max-width: 90%;
+      height: auto;
+      margin: auto;
+      border-radius: 8px;
+      @include boxShadowA();
+
+    }
+  }
+
+  .bannerA-text-btn{
+    margin: auto;
+    padding: 3% 7%;
+
+    @include lg {padding: 0 15% 0 5%;}
+
+    .bannerA-text{
+      .A-h1{ @include A-h1(); }
+     .A-p{ @include A-p(); }
+    }
+
+    .bannera-btn{
+      margin-top: 5%;
+
+      .A-btn{ @include btn-hero($myPrimary1); }
+    }
+  }
+}
+
+
+// utilities (margin, padding, opacity, etc)
+
+@mixin blockMarginBorder($mt: 5px, $ml: auto, $br: 8px){
+  margin: $mt $ml;
+  border-radius: $br;
+}
+
+@mixin boxShadowA(){
+  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.07);
+}
+
+@mixin A-h1(){
+  margin: 0;
+  font-size: 15px;
+  font-family: NBold;
+  line-height: 15px;
+  text-transform: capitalize;
+  @include sm {font-size: 18px; line-height: 20px;}
+  @include xl {font-size: 30px;  line-height: 35px;}
+}
+
+@mixin A-h2(){
+  margin: 0;
+  font-size: 15px;
+  font-family: NBold;
+  line-height: 15px;
+  text-transform: capitalize;
+}
+
+@mixin A-p(){
+  font-size: 13px;
+  font-family: Nregular;
+  text-transform: capitalize;
+  text-align: left;
+  @include sm {text-align: justify;}
+  @include xl {font-size: 15px;}
+}

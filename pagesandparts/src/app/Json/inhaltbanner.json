@@ -1,0 +1,37 @@
+[
+  {
+    "img": "../../../assets/HOME.jpg",
+    "title": "Personalisiertes Magazin-Cover",
+    "description":
+    "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc",
+
+    "img1": "../../../assets/HOME6.jpg",
+    "title1": "Die Welt der Säugetiere",
+    "description1":
+    "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc"
+  },
+
+  {
+    "img": "../../../assets/HOME15.jpg",
+    "title": "meine fotos",
+    "description":
+    "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc",
+
+    "img1": "../../../assets/HOME40.jpg",
+    "title1": "kindergeschichte",
+    "description1":
+    "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc"
+  },
+
+  {
+    "img": "../../../assets/HOME45.jpg",
+    "title": "Vögel",
+    "description":
+    "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc",
+
+    "img1": "../../../assets/HOME60.jpg",
+    "title1": "Rückseite",
+    "description1":
+    ""
+  }
+]

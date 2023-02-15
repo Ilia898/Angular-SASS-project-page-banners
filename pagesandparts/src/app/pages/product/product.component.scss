@@ -1,0 +1,114 @@
+@import '../../config-sass/index.scss';
+
+.product-container{
+  margin: auto;
+
+  .product-block{
+    display: flex;
+    padding: 3% 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid $myPrimary4;
+    // background: red;
+
+    .images-block{
+      display: flex;
+
+      .images-line{
+        display: inline-block;
+        height: auto;
+        margin: auto 2%;
+
+        .line{
+
+          img {
+            height: auto;
+            width: 95%;
+            margin: auto 5%;
+            padding: 3%;
+            box-sizing: border-box;
+            border-radius: 2px;
+            border: 1px solid $myPrimary5-1;
+            background: $myHeroBack;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .main-image{
+        display: flex;
+        height: 100%;
+        margin: auto;
+        padding: 4%;
+        box-sizing: border-box;
+        border-radius: 2px;
+        background: $myHeroBack;
+
+        img{
+          height: auto;
+          width: 100%;
+          margin: auto;
+          box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.07);
+        }
+      }
+    }
+
+    .title-block{
+      padding: 0 3%;
+      background: yellowgreen;
+
+      .title{
+        font-family: NBold;
+        font-size: 12px;
+        color: $myPrimary4-1;
+        background:red;
+      }
+
+      .rating{
+        display: block;
+        font-family: NsemiBold;
+        font-size: 15px;
+        color: $myPrimary4-1;
+        background: yellow;
+
+        ul{
+          display: flex;
+          padding: 0;
+          list-style: none;
+          background: green;
+
+          li{
+            margin-right: 5px;
+            background: red;
+
+            fa-icon{
+              color: $myPrimary2;
+            }
+
+            // .star{
+            //   color: white;
+            //   border: 1px solid $myPrimary2;
+            // }
+
+            svg{
+              text-decoration-color: $myPrimary2;
+              height: 20px;
+            }
+          }
+        }
+      }
+
+      .price{
+        background: green;
+      }
+
+      .btns{
+        background: grey;
+      }
+
+      .text{
+        background: blue;
+      }
+
+      }
+  }
+}

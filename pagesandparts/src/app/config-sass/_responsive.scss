@@ -1,0 +1,58 @@
+$responsive: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($responsive, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($responsive, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($responsive, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($responsive, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($responsive, "xl")) {
+    @content;
+  }
+}
+
+
+.responsive-txt {
+  @include xs {
+    display: none;
+  }
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: none;
+  }
+  @include lg {
+   display: flex;
+   display: flex;
+  }
+  @include xl {
+    display: flex;
+  }
+}
+
