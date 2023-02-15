@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {faStar, faStarHalfStroke} from '@fortawesome/free-solid-svg-icons';
+import { faStar as farStar} from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-product',
@@ -7,7 +9,9 @@ import { Component } from '@angular/core';
 })
 export class ProductComponent {
 
-
+  fullStar = faStar;
+  halfFullStar = faStarHalfStroke;
+  noFullStar = farStar;
 
   productsImage =[
     {"id": "0", "url": "../assets/product-slider-image/HOME.jpg"},
