@@ -24,8 +24,9 @@ export class ProductComponent {
   mainImage = this.productsImage[0].url;
   activImage = this.mainImage;
 
-  valueRate = 3;
+  valueRate = 2;
   totalStars = 5;
+
   priceValue = 25.25;
 
 

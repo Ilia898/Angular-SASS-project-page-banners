@@ -36,7 +36,6 @@
 
       .main-image{
         display: flex;
-        height: 100%;
         margin: auto;
         padding: 4%;
         box-sizing: border-box;
@@ -58,8 +57,10 @@
 
       .title{
         font-family: NBold;
-        font-size: 12px;
+        font-size: 10px;
         color: $myPrimary4-1;
+        @include xl {font-size: 14px;};
+        @include lg {font-size: 12px;};
 
         h1 {
           margin:2% 0;
@@ -102,8 +103,16 @@
       }
 
       .btns{
-        margin-top: 3%;
+        margin: 3% 0 0 0;
         @include btn-hero($myPrimary2);
+
+        a{
+          font-size: 10px;
+          padding: 2% 5%;
+          @include md {font-size: 11px; };
+          @include lg {font-size: 13px; };
+          @include xl {font-size: 18px; };
+        }
       }
 
       .text{
