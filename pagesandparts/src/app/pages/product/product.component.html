@@ -49,18 +49,22 @@
 
   </div>
   <div class="col-12-xs description-block">
-    <div class="col-11-xs description">
+    <div class="col-12-xs description">
+      <h1>Artikelbeschreibung</h1>
       <ul *ngFor="let bulet of description.bulet">
         <li>{{bulet.buleti}}</li>
       </ul>
       <p>{{description.shortDescription.text}}</p>
     </div>
-    <div class="col-11-xs description-image" *ngFor="let image of description.descriptionImage ">
-      <img [src]="image.image" alt="Image">
+    <div class="col-12-xs description-image">
+      <div class="col-12-xs image" *ngFor="let image of description.descriptionImage">
+        <img [src]="image.image" alt="Image">
+      </div>
     </div>
-    <div class="col-11-xs description-details">
+    <div class="col-12-xs description-details">
+      <h1>Details</h1>
       <ul *ngFor="let detail of description.details">
-        <li>{{detail.detail}}</li>
+        <li><span>{{detail.detailTitle}}</span> {{detail.detailText}}</li>
       </ul>
     </div>
   </div>

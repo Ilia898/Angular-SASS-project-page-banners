@@ -16,10 +16,24 @@
   ],
 
   "details": [
-    {"detail":"Produktbezeichnung: Abizeitung mit Drahtheftung, Endformat DIN A4, 58-seitig."},
-    {"detail":"Format: 210 x 297 mm."},
-    {"detail":"Sorte: 115g Innenteil (glänzend) || 170g Umschlag (glänzend)."},
-    {"detail":"Seitenanzahl: 58 Seite(n)"},
-    {"detail":"Farbigkeit: 4/4-farbig"}
-    ]
+    {"detailTitle":"Produktbezeichnung:",
+      "detailText":"Abizeitung mit Drahtheftung, Endformat DIN A4, 58-seitig."
+    },
+
+    {"detailTitle":"Format:",
+     "detailText":"210 x 297 mm."
+    },
+
+    {"detailTitle":"Sorte:",
+    "detailText":"115g Innenteil (glänzend) || 170g Umschlag (glänzend)."
+    },
+
+    {"detailTitle":"Seitenanzahl:",
+     "detailText":"58 Seite(n)"
+    },
+
+    {"detailTitle":"Farbigkeit:",
+    "detailText":"4/4-farbig"
+    }
+  ]
 }

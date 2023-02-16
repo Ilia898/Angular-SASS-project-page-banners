@@ -186,4 +186,40 @@
       }
     }
   }
+
+  .description-block{
+    font-family: Nregular;
+    color: $myPrimary4-1;
+
+    .description{
+      border-bottom: 1px solid $myPrimary4;
+    }
+
+    .description-image{
+      display: flex;
+      border-bottom: 1px solid $myPrimary4;
+
+       .image{
+        margin: 1%;
+
+        img{
+          width: 70%;
+          height: auto;
+          margin: auto;
+          border: 1px solid $myPrimary5-1;
+          border-radius: 4px;
+        }
+      }
+    }
+
+    .description-details{
+      ul{
+        li{
+          span{
+            font-family: NBold;
+          }
+        }
+      }
+    }
+  }
 }
