@@ -4,129 +4,183 @@
   margin: auto;
 
   .product-block{
-    display: flex;
+    display: block;
     padding: 3% 0;
     box-sizing: border-box;
     border-bottom: 1px solid $myPrimary4;
     // background: red;
 
-    .images-block{
-      display: flex;
+    .title-sm{
+      padding: 0 3%;
+      font-family: Nregular;
+      font-size: 8px;
+      text-align: start;
+      color: $myPrimary4-1;
+      @include md {display: none}
 
-      .images-line{
-        display: inline-block;
-        height: auto;
-        margin: auto 2%;
-
-        .line{
-
-          img {
-            height: auto;
-            width: 95%;
-            margin: auto 5%;
-            padding: 3%;
-            box-sizing: border-box;
-            border-radius: 2px;
-            border: 1px solid $myPrimary5-1;
-            background: $myHeroBack;
-            cursor: pointer;
-          }
-        }
       }
 
-      .main-image{
-        display: flex;
-        margin: auto;
-        padding: 4%;
-        box-sizing: border-box;
-        border-radius: 2px;
-        background: $myHeroBack;
+    .block-image-title{
+      display: block;
+      @include sm {display:flex;}
 
-        img{
-          height: auto;
-          width: 100%;
-          margin: auto;
-          box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.07);
-        }
-      }
-    }
-
-    .title-block{
-      padding-left: 3%;
-
-
-      .title{
-        font-family: NBold;
-        font-size: 10px;
-        color: $myPrimary4-1;
-        @include xl {font-size: 14px;};
-        @include lg {font-size: 12px;};
-
-        h1 {
-          margin:2% 0;
-        }
-      }
-
-      .rating{
+      .images-block{
         display: block;
-        padding-bottom: 2%;
-        border-bottom: 1px solid $myPrimary4;
-        font-family: NsemiBold;
-        font-size: 15px;
-        color: $myPrimary4-1;
+        @include lg {display: flex;}
 
-        ul{
-          display: flex;
-          margin: 10px 0;
-          padding: 0;
-          list-style: none;
+        .images-line{
+          display: none;
+          height: auto;
+          margin: auto 2%;
+          @include lg {display: inline-block;}
 
-          li{
-            margin: auto 5px auto 0;
+          .line{
 
-            fa-icon{
-              font-size: 20px;
-              color: $myPrimary2;
+            img {
+              height: auto;
+              width: 95%;
+              margin: auto 5%;
+              padding: 3%;
+              box-sizing: border-box;
+              border-radius: 2px;
+              border: 1px solid $myPrimary5-1;
+              background: $myPrimary6;
+              cursor: pointer;
             }
           }
         }
-      }
 
-      .price{
-        font-family: NBold;
-        font-size: 20px;
+        .main-image{
+          display: flex;
+          margin: auto;
+          padding: 4%;
+          box-sizing: border-box;
+          border-radius: 2px;
+          background: $myPrimary6;
 
-        p{
-          margin-left: 10px;
-          margin-top: 10px;
+          img{
+            height: auto;
+            width: 100%;
+            margin: auto;
+            box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.07);
+          }
         }
+
+        .images-line-md{
+          display: flex;
+          margin: 2% auto;
+          @include lg {display: none;}
+
+          .line{
+
+            img {
+              height: auto;
+              width: 95%;
+              margin: auto 5%;
+              padding: 3%;
+              box-sizing: border-box;
+              border-radius: 2px;
+              border: 1px solid $myPrimary5-1;
+              background: $myHeroBack;
+              cursor: pointer;
+            }
+          }
+        }
+
       }
 
-      .btns{
-        margin: 3% 0 0 0;
-        @include btn-hero($myPrimary2);
+      .title-block{
+        padding-left: 3%;
 
-        a{
+
+        .title{
+          display: none;
+          font-family: NBold;
           font-size: 10px;
-          padding: 2% 5%;
-          @include md {font-size: 11px; };
-          @include lg {font-size: 13px; };
-          @include xl {font-size: 18px; };
+          color: $myPrimary4-1;
+          @include md {font-size: 8px; display: block;};
+          @include lg {font-size: 9px;};
+          @include xl {font-size: 14px;};
+
+          h1 {
+            margin:2% 0;
+          }
         }
-      }
 
-      .text{
-        display: block;
-        margin: 5% 0;
-        font-family: NsemiBold;
-        font-size: 15px;
-        color: $myPrimary4-1;
+        .rating{
+          display: block;
+          padding-bottom: 1%;
+          border-bottom: 1px solid $myPrimary4;
+          font-family: NsemiBold;
+          font-size: 15px;
+          color: $myPrimary4-1;
 
-        p {
-          margin: 10px 0;
+          ul{
+            display: flex;
+            margin: 1% 0;
+            padding: 0;
+            list-style: none;
 
-          span{
-            font-family: NBold;
+            li{
+              margin: auto 5px auto 0;
+
+              fa-icon{
+                font-size: 90%;
+                color: $myPrimary2;
+                @include md {font-size: 20px;}
+              }
+            }
+          }
+        }
+
+        .price{
+          font-family: NBold;
+          font-size: 20px;
+
+          p{
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .btns{
+          margin: 0;
+          @include btn-hero($myPrimary2);
+          @include md {display: flex;}
+
+          a{
+            display: block;
+            font-size: 15px;
+            text-align: center;
+            margin: 3% 0;
+            padding: 2% 5%;
+            @include sm {font-size: 11px; };
+            @include md {margin: 0 1%; font-size: 11px; };
+            @include lg {font-size: 13px; };
+            @include xl {font-size: 18px; };
+          }
+        }
+
+        .text{
+          display: block;
+          margin: 5% 0;
+          font-family: NsemiBold;
+          font-size: 15px;
+          color: $myPrimary4-1;
+          @include lg {font-size: 9;}
+
+          p {
+            margin: 2% 0;
+
+            span{
+              font-family: NBold;
+            }
+          }
+
+          .seite {
+            display: none;
+            @include md {display: block;}
           }
         }
       }

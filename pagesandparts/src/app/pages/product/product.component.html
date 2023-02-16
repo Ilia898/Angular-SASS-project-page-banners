@@ -1,48 +1,67 @@
-<div class="col-10-xs product-container">
+<div class="col-10-sm col-11-xs product-container">
   <div class="col-12-xs product-block">
-    <div class="col-5-xs images-block">
-      <div class="col-2-xs images-line">
-        <div class="col-12-xs line" *ngFor=" let proImage of productsImage">
-          <img (click)="imagePreview(proImage)" [src]="proImage.url" alt="Magazin" [id]="proImage.id">
+    <div class="col-12-xs title-sm">
+      <h1>{{productTitle}}</h1>
+    </div>
+    <div col-12-xs class="block-image-title">
+      <div class="col-5-md col-6-sm col-12-xs images-block">
+        <div class="col-2-xs images-line">
+          <div class="col-12-xs line" *ngFor=" let proImage of productsImage">
+            <img (click)="imagePreview(proImage)" [src]="proImage.url" alt="Magazin" [id]="proImage.id">
+          </div>
+        </div>
+        <div class="col-10-sm col-12-xs main-image">
+          <img [src]="mainImage" alt="Magazin">
+        </div>
+        <div class="col-10-sm col-12-xs images-line-md">
+          <div class="col-12-xs line" *ngFor=" let proImage of productsImage">
+            <img (click)="imagePreview(proImage)" [src]="proImage.url" alt="Magazin" [id]="proImage.id">
+          </div>
         </div>
       </div>
-      <div class="col-10-xs main-image">
-        <img [src]="mainImage" alt="Magazin">
+      <div class="col-7-md col-6-sm col-12-xs title-block">
+        <div class="col-12-xs title">
+          <h1>{{productTitle}}</h1>
+        </div>
+        <div class="col-12-xs rating">
+          <span>Kritiken und Bewertungen</span>
+            <ul>
+              <li *ngFor="let star of [].constructor(totalStars); let i=index;">
+                <fa-icon *ngIf="(i+1)<=this.valueRate" [icon]="fullStar"></fa-icon>
+                <fa-icon *ngIf="(i+1)>this.valueRate" [icon]="noFullStar"></fa-icon>
+              </li>
+            </ul>
+          <span>{{valueRate}} Sternebewertungen</span>
+        </div>
+        <div class="col-12-xs price">
+          <p>{{priceValue | currency: 'EUR': "symbol"}}</p>
+        </div>
+        <div class="col-12-xs btns">
+          <a href="">Jetzt personalisieren</a>
+          <a href="">In den Warenkorb legen</a>
+        </div>
+        <div class="col-12-xs text">
+          <p><span>Kostenloser Versand</span> - Bestellen Sie jetzt und profitieren Sie von unserem kostenlosen Versand!</p>
+          <p class="seite"><span>Seiten:</span>  58 Pages, <span>Bindung:</span>  mit Drahtheftung</p>
+        </div>
       </div>
     </div>
-    <div class="col-7-xs title-block">
-      <div class="col-12-xs title">
-        <h1>
-          Erwecken Sie die Fantasie Ihres Kindes mit
-          einem personalisierten Kinder-Magazin, das
-          eine umfangreiche Tier-Enzyklopädie, kurzweilige
-           Geschichten und kreative Gestaltungsmöglichkeiten bietet
-        </h1>
-      </div>
-      <div class="col-12-xs rating">
-        <span>Kritiken und Bewertungen</span>
-          <ul>
-            <li *ngFor="let star of [].constructor(totalStars); let i=index;">
-              <fa-icon *ngIf="(i+1)<=this.valueRate" [icon]="fullStar"></fa-icon>
-              <fa-icon *ngIf="(i+1)>this.valueRate" [icon]="noFullStar"></fa-icon>
-            </li>
-            <li>168 Sternebewertungen</li>
-          </ul>
-      </div>
-      <div class="col-12-xs price">
-        <p>{{priceValue | currency: 'EUR': "symbol"}}</p>
-      </div>
-      <div class="col-12-xs btns">
-        <a href="">Jetzt personalisieren</a>
-        <a href="">In den Warenkorb legen</a>
-      </div>
-      <div class="col-12-xs text">
-        <p><span>Kostenloser Versand</span> - Bestellen Sie jetzt und profitieren <br> Sie von unserem kostenlosen Versand!</p>
-        <p><span>Seiten:</span>  224 Pages Bindung:  Gebundene Ausgabe</p>
-      </div>
-    </div>
+
   </div>
   <div class="col-12-xs description-block">
-    <div class="col-11-xs text-image"></div>
+    <div class="col-11-xs description">
+      <ul *ngFor="let bulet of description.bulet">
+        <li>{{bulet.buleti}}</li>
+      </ul>
+      <p>{{description.shortDescription.text}}</p>
+    </div>
+    <div class="col-11-xs description-image" *ngFor="let image of description.descriptionImage ">
+      <img [src]="image.image" alt="Image">
+    </div>
+    <div class="col-11-xs description-details">
+      <ul *ngFor="let detail of description.details">
+        <li>{{detail.detail}}</li>
+      </ul>
+    </div>
   </div>
 </div>

@@ -1,0 +1,25 @@
+{ "bulet": [
+  {"buleti": "Einzigartiges Lern- und Unterhaltungserlebnis für junge Tierliebhaber und Geschichtenerzähler."},
+  {"buleti":"Enzyklopädie der Tierwelt, die Lebensräume, Verhaltensweisen und Merkmale von Tieren erklärt."},
+  {"buleti":"Auswahl an spannenden Kurzgeschichten für Kinder mit wichtigen Lektionen wie Freundschaft, Zusammenhalt, Umweltschutz und Respekt für Tiere."},
+  {"buleti":"Vollständig personalisierbar mit Fotos Ihres Kindes auf dem Cover, in Geschichten und Aktivitäten."},
+  {"buleti":"Hochwertiger Druck auf A4-Papier mit 58 Seiten und perfekt für gemütliche Lesestunden zu Hause oder unterwegs."}
+  ],
+
+  "shortDescription":{"text": "Das Kinder-Magazin ist ein lustiges und lehrreiches Erlebnis für junge Tierliebhaber und Geschichtenerzähler. Jede Ausgabe enthält eine Enzyklopädie der Tierwelt und eine Auswahl von Kurzgeschichten, die speziell für Kinder geschrieben wurden. Die Geschichten vermitteln wichtige Werte wie Freundschaft, Zusammenhalt und Respekt für Tiere. Das Magazin ist mit einem Online-Tool vollständig anpassbar, und Sie können Fotos Ihres Kindes hinzufügen, um es zu einem einzigartigen und personalisierten Geschenk zu machen. Das Magazin wird auf hochwertigem Papier gedruckt und ist eine großartige Möglichkeit zu lernen und Spaß beim Lesen zu haben."},
+
+  "descriptionImage":[
+    {"image": "../../assets/product-slider-image/product-description-image/HOME.jpg"},
+    {"image": "../../assets/product-slider-image/product-description-image/HOME19.jpg"},
+    {"image": "../../assets/product-slider-image/product-description-image/HOME48.jpg"}
+
+  ],
+
+  "details": [
+    {"detail":"Produktbezeichnung: Abizeitung mit Drahtheftung, Endformat DIN A4, 58-seitig."},
+    {"detail":"Format: 210 x 297 mm."},
+    {"detail":"Sorte: 115g Innenteil (glänzend) || 170g Umschlag (glänzend)."},
+    {"detail":"Seitenanzahl: 58 Seite(n)"},
+    {"detail":"Farbigkeit: 4/4-farbig"}
+    ]
+}
