@@ -1,0 +1,26 @@
+<div class="col-10-xs main-container">
+
+  <!-- menu -->
+  <div class="col-12-xs menu-main-container">
+    <h1 class=" main-h1">mein konto</h1>
+    <div class="menu-container">
+      <div class="col-4-xs menu-block" *ngFor="let menu of kontoMenuJson">
+        <div class="img-block">
+        <img [src]="menu.img" alt="">
+        </div>
+
+        <div class="text-block">
+          <p><span>{{ menu.h1 }}</span><br>{{ menu.p }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end menu -->
+
+  <!-- mein bestellungen -->
+  <div class="bestellungen-main-container">
+    <h1 class=" main-h1">mein konto</h1>
+  </div>
+  <!-- end mein bestellungen -->
+</div>
+

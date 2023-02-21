@@ -1,0 +1,23 @@
+{
+  "menuBlock":[
+    {"img": "../../assets/mein-konto-image/myk-1.png",
+     "h1": "Meine Bestellungen",
+     "p": "Nachverfolgung Ihrer Sendung"
+    },
+
+    {"img": "../../assets/mein-konto-image/myk-2.png",
+     "h1": "Adressen",
+     "p": "Adresse ändern"
+    },
+
+    {"img": "../../assets/mein-konto-image/myk-3.png",
+     "h1": "Meine Kontodetails",
+     "p": "Bearbeiten Sie Ihre Anmeldedaten"
+    },
+
+    {"img": "../../assets/mein-konto-image/myk-4.png",
+     "h1": "Mein Posteingang",
+     "p": "Die Nachrichten, die wir Ihnen schicken"
+    }
+  ]
+}

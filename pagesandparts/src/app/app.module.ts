@@ -8,13 +8,15 @@ import { ProductComponent } from './pages/product/product.component';
 
 import { registerLocaleData } from '@angular/common';
 import localeDe from '@angular/common/locales/de';
+import { MeinKontoComponent } from './pages/mein-konto/mein-konto.component';
 
 registerLocaleData(localeDe, 'de-DE');
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent
+    ProductComponent,
+    MeinKontoComponent
   ],
   imports: [
     BrowserModule,

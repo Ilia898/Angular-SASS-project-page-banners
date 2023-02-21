@@ -1,0 +1,66 @@
+@import '../../config-sass/index.scss';
+
+
+.main-container{
+  margin: 0 auto;
+
+  .menu-main-container{
+    margin: 0 auto;
+    padding-bottom: 1%;
+    text-transform: capitalize;
+    border-bottom: 2px solid $myPrimary5;
+    overflow: auto;
+
+    .main-h1{
+      margin: 1%;
+      font-family: NextraBold;
+      font-size: 27px;
+    }
+
+    .menu-container{
+
+      .menu-block{
+        display: flex;
+        float: left;
+        height: 70px;
+        margin: 0.5% 1%;
+        padding: 5px;
+        border: 2px solid $myPrimary5;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover{
+          background: $myPrimary5-2;
+        }
+
+        .img-block{
+          padding: 6px 10px;
+          background: $myHeroBack;
+          border-radius: 4px;
+
+          img{
+            height: 100%;
+            width: auto;
+          }
+        }
+
+        .text-block{
+          margin-left:  5%;
+
+          p{
+            font-family: Nregular;
+            font-size: 12px;
+
+            span{
+              color: $mytext;
+              font-family: Nbold;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
