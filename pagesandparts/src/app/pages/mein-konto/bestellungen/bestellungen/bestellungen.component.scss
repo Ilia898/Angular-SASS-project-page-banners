@@ -1,0 +1,40 @@
+@import '../../../../config-sass/index.scss';
+
+.main-container{
+
+  .container-header{
+    padding-left: 1%;
+    font-family: Nbold;
+    text-transform: capitalize;
+    border-bottom: 1px solid $myPrimary5;
+ }
+
+ .bst-container{
+  margin: 1% auto;
+  padding: 2%;
+  font-family: Nregular;
+  border-radius: 8px;
+  background: $myHeroBack;
+
+  .data{
+    margin: 1% auto;
+    font-family: NsemiBold ;
+  }
+  .bst-block{
+    display: flex;
+    margin: auto;
+    padding: 2%;
+    border-radius: 8px;
+    background: $myPrimary6-2;
+
+    .img{
+      img{
+        width: 100px;
+        height: auto;
+      }
+    }
+
+  }
+ }
+
+}

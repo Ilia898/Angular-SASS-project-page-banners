@@ -27,5 +27,40 @@
      "h1": "Mein Posteingang",
      "p": "Die Nachrichten, die wir Ihnen schicken"
     }
+  ],
+
+  "bestellungenBlock": [
+    {
+      "data":"23.02.2023",
+      "img": "../../assets/mein-konto-image/HOME.jpg",
+      "nummer":"0001",
+      "bestellt":"Bestellt",
+      "unterwegs":"Unterwegs",
+      "zugestellt":"Zugestellt"
+    },
+    {
+      "data":"23.01.2023",
+      "img": "../../assets/mein-konto-image/HOME.jpg",
+      "nummer":"0001",
+      "bestellt":"Bestellt",
+      "unterwegs":"Unterwegs",
+      "zugestellt":"Zugestellt"
+    },
+    {
+      "data":"23.12.2022",
+      "img": "../../assets/mein-konto-image/HOME.jpg",
+      "nummer":"0001",
+      "bestellt":"Bestellt",
+      "unterwegs":"Unterwegs",
+      "zugestellt":"Zugestellt"
+    },
+    {
+      "data":"23.11.2022",
+      "img": "../../assets/mein-konto-image/HOME.jpg",
+      "nummer":"0001",
+      "bestellt":"Bestellt",
+      "unterwegs":"Unterwegs",
+      "zugestellt":"Zugestellt"
+    }
   ]
 }

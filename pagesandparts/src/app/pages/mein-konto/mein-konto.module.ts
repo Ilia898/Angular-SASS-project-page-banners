@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { MeinKontoComponent } from './mein-konto.component';
 import { AdressenComponent } from './adressen/adressen/adressen.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forRoot(routes),
+    FontAwesomeModule,
 
   ],
   declarations: [

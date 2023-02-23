@@ -1,3 +1,37 @@
-<p>
-  bestellungen works!
-</p>
+<div class="col-12-xs main-container">
+  <div class="container-header">
+    <h1>{{title}}</h1>
+  </div>
+
+  <div class="col-12-xs bst-container" *ngFor="let bst of bestellungen">
+    <div class="col-11-xs data">{{bst.data}}</div>
+    <div class="col-11-xs bst-block">
+      <div class="img">
+        <img [src]="bst.img" alt="Image">
+      </div>
+      <div class="nummer">{{bst.nummer}}</div>
+      <div class="status">
+        <div class="bestellt">
+          <div class="icon">
+            <fa-icon [icon]="iconBag"></fa-icon>
+          </div>
+          <span>{{bst.bestellt}}</span>
+        </div>
+        <div class="unterwegs">
+          <div class="icon">
+            <fa-icon [icon]="iconTruck"></fa-icon>
+          </div>
+          <span>{{bst.unterwegs}}</span>
+        </div>
+        <div class="zugestellt">
+          <div class="icon">
+            <fa-icon [icon]="iconGift"></fa-icon>
+          </div>
+          <span>{{bst.zugestellt}}</span>
+        </div>
+      </div>
+      <div class="links"></div>
+    </div>
+
+  </div>
+</div>
