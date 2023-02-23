@@ -7,8 +7,7 @@ import { MeinKontoComponent } from './mein-konto.component';
 import { AdressenComponent } from './adressen/adressen/adressen.component';
 import { BestellungenComponent } from './bestellungen/bestellungen/bestellungen.component';
 import { KontodetailsComponent } from './kontodetails/kontodetails/kontodetails.component';
-import { PosteingangComponent } from './posteingang/posteingang/posteingang.component';
-
+import { PosteingangComponent } from './posteingang/posteingang.component';
 const routes: Routes = [
   {path: 'bestellung', component: BestellungenComponent},
   {path: 'adressen', component: AdressenComponent},
@@ -30,7 +29,7 @@ const routes: Routes = [
     AdressenComponent,
     BestellungenComponent,
     KontodetailsComponent,
-    PosteingangComponent,
+    PosteingangComponent
   ],
 
   exports: [
