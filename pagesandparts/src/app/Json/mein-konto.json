@@ -34,7 +34,7 @@
       "data":"23.02.2023",
       "img": "../../assets/mein-konto-image/HOME.jpg",
       "nummer":"0001",
-      "bestellt":"Bestellt >",
+      "bestellt":"Bestellt",
       "unterwegs":"",
       "zugestellt":"",
       "stonierte": "stonierte"
@@ -43,7 +43,7 @@
       "data":"23.01.2023",
       "img": "../../assets/mein-konto-image/HOME.jpg",
       "nummer":"0002",
-      "bestellt":"Bestellt >",
+      "bestellt":"Bestellt",
       "unterwegs":"",
       "zugestellt":"",
       "stonierte": ""
@@ -52,8 +52,8 @@
       "data":"23.12.2022",
       "img": "../../assets/mein-konto-image/HOME.jpg",
       "nummer":"0003",
-      "bestellt":"Bestellt >",
-      "unterwegs":"Unterwegs >",
+      "bestellt":"Bestellt",
+      "unterwegs":"Unterwegs",
       "zugestellt":"",
       "stonierte": ""
     },
@@ -61,8 +61,8 @@
       "data":"23.11.2022",
       "img": "../../assets/mein-konto-image/HOME.jpg",
       "nummer":"0004",
-      "bestellt":"Bestellt >",
-      "unterwegs":"Unterwegs >",
+      "bestellt":"Bestellt",
+      "unterwegs":"Unterwegs",
       "zugestellt":"Zugestellt",
       "stonierte": ""
     }

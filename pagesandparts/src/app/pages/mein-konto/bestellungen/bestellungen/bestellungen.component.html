@@ -3,43 +3,42 @@
     <h1>{{title}}</h1>
   </div>
 
-  <div class="col-12-xs bst-container" *ngFor="let bst of bestellungen">
-    <div class="col-11-xs data">{{bst.data}}</div>
-    <div class="col-11-xs bst-block">
-      <div class="col-3-xs img">
-        <img [src]="bst.img" alt="Image">
-      </div>
-      <div class="col-3-xs nummer">
-        <span>Bestellnummer : {{bst.nummer}}</span>
-      </div>
-      <div class="col-3-xs status">
-        <div *ngIf="this.bst.stonierte" class="stonierte">
-          <span>stonierte</span>
-        </div>
-        <div *ngIf="!this.bst.stonierte" class="bestellt">
-          <div class="icon">
-            <fa-icon [icon]="iconBag"></fa-icon>
-          </div>
-          <span>{{bst.bestellt}}</span>
-        </div>
-        <div *ngIf="!this.bst.stonierte"  class="unterwegs">
-          <div class="icon">
-            <fa-icon *ngIf="this.bst.unterwegs" [icon]="iconTruck"></fa-icon>
-          </div>
-          <span>{{bst.unterwegs}}</span>
-        </div>
-        <div *ngIf="!this.bst.stonierte" class="zugestellt">
-          <div class="icon">
-            <fa-icon *ngIf="this.bst.zugestellt" [icon]="iconGift"></fa-icon>
-          </div>
-          <span>{{bst.zugestellt}}</span>
-        </div>
-      </div>
-      <div class="col-3-xs links">
+  <div class="col-11-xs bst-container" *ngFor="let bst of bestellungen">
+    <div class="col-11-xs data"><span>{{bst.data}} /</span> <span>Bestellnummer : {{bst.nummer}}</span></div>
+    <div class="col-12-xl col-12-xs bst-block">
+      <div class="col-12-xs links">
         <a *ngIf="!this.bst.unterwegs && !this.bst.stonierte"  href="">stornieren</a>
-        <a href="">nochmals kaufen ></a>
+        <br><a href="">nochmals kaufen ></a>
       </div>
-    </div>
+      <div class="col-12-xs img-icon">
+        <div class="col-4-xs img">
+          <img [src]="bst.img" alt="Image">
+        </div>
+        <div class="col-4-md col-7-xs status">
+          <div *ngIf="this.bst.stonierte" class="stonierte">
+            <span>stonierte</span>
+          </div>
+          <div *ngIf="!this.bst.stonierte" class="bestellt">
+            <div class="icon">
+              <fa-icon [icon]="iconBag"></fa-icon>
+            </div>
+            <span>{{bst.bestellt}}</span>
+          </div>
+          <div *ngIf="!this.bst.stonierte"  class="unterwegs">
+            <div class="icon">
+              <fa-icon *ngIf="this.bst.unterwegs" [icon]="iconTruck"></fa-icon>
+            </div>
+            <span>{{bst.unterwegs}}</span>
+          </div>
+          <div *ngIf="!this.bst.stonierte" class="zugestellt">
+            <div class="icon">
+              <fa-icon *ngIf="this.bst.zugestellt" [icon]="iconGift"></fa-icon>
+            </div>
+            <span>{{bst.zugestellt}}</span>
+          </div>
+        </div>
+      </div>
 
+    </div>
   </div>
 </div>

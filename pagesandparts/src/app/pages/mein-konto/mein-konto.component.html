@@ -4,13 +4,13 @@
   <div class="col-12-xs menu-main-container">
     <h1 class=" main-h1">mein konto</h1>
     <div class="menu-container">
-      <div class="col-4-xs menu-block" *ngFor="let menu of kontoMenuJson" routerLink="{{menu.path}}">
-        <div class="img-block">
-        <img [src]="menu.img" alt="">
+      <div class="col-4-xl col-5-sm col-10-xs menu-block" *ngFor="let menu of kontoMenuJson" routerLink="{{menu.path}}">
+        <div class="col-2-lg col-4-xs img-block">
+          <img [src]="menu.img" alt="">
         </div>
 
-        <div class="text-block">
-          <p><span>{{ menu.h1 }}</span><br>{{ menu.p }}</p>
+        <div class="col-10-xs text-block">
+          <p>{{ menu.h1 }}<br><span>{{ menu.p }}</span></p>
         </div>
       </div>
     </div>
