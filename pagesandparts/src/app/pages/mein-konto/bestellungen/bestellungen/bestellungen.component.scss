@@ -11,8 +11,9 @@
 
  .bst-container{
   margin: 1% auto;
-  padding: 2%;
-  font-family: Nregular;
+  padding: 1%;
+  color: $mytext;
+  font-family: NsemiBold;
   border-radius: 8px;
   background: $myHeroBack;
 
@@ -20,20 +21,98 @@
     margin: 1% auto;
     font-family: NsemiBold ;
   }
+
   .bst-block{
     display: flex;
-    margin: auto;
+    margin:auto  auto 1% auto;
     padding: 2%;
     border-radius: 8px;
     background: $myPrimary6-2;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.07);
 
     .img{
+      display: flex;
+      margin: auto;
+
       img{
-        width: 100px;
+        width: 70px;
         height: auto;
+        margin: auto;
+        border-radius: 4px;
+        border: 0.5px solid $myPrimary5;
       }
     }
 
+    .nummer{
+      margin: auto;
+      font-family: Nbold;
+    }
+
+    .status{
+      display: flex;
+      margin: auto 0;
+      justify-content: space-between;
+
+      span{
+        font-family: NsemiBold;
+        font-size: 15px;
+      }
+
+      .icon{
+        display: flex;
+        height: 50px;
+        width: 50px;
+        margin: auto auto 4%;
+        border-radius: 50%;
+        background: $myPrimary6;
+        box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.07);
+
+        fa-icon{
+          margin: auto;
+          font-size: 20px;
+        }
+      }
+
+      .stonierte{
+        margin: auto;
+        font-family: NBlack;
+        text-transform: capitalize;
+
+        span{
+          color: $myPrimary1;
+          font-size: 30px;
+        }
+
+      }
+
+      .bestellt{
+        .icon{
+          color: $myPrimary2;
+        }
+      }
+
+      .unterwegs{
+        .icon{
+          color: $myPrimary1;
+        }
+      }
+
+      .zugestellt{
+        .icon{
+          color: $myImageBack3;
+        }
+      }
+    }
+
+    .links{
+      text-align: right;
+
+      a{
+        display: block;
+        margin: 7%;
+        color: $mytext;
+      }
+    }
   }
  }
 
