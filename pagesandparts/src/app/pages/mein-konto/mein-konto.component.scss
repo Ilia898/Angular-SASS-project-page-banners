@@ -1,5 +1,8 @@
 @import '../../config-sass/index.scss';
 
+.active{
+  background: $myPrimary5;
+}
 
 .main-container{
   margin: 0 auto;
@@ -31,6 +34,7 @@
 
         &:hover{
           background: $myPrimary5-2;
+          border-color: $myPrimary5-1;
         }
 
         .img-block{
