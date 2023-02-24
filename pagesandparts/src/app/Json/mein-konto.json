@@ -66,5 +66,49 @@
       "zugestellt":"Zugestellt",
       "stonierte": ""
     }
+  ],
+
+  "adressenBlock": [
+    {
+      "fullName": "ilia tskhvediani",
+      "adresse": {
+        "strHeusnummer": "kurt-eisner-str. 41",
+        "adresszusatz": "c/o wiedemann",
+        "plz": "81735",
+        "stadt": "münchen",
+        "ort": "bayern",
+        "land": "deutchland"
+      },
+      "tel": "+4915730484802",
+      "standardadresse": "standardadresse"
+    },
+
+    {
+      "fullName": "tamari tskhvediani",
+      "adresse": {
+        "strHeusnummer": "kurt-eisner-str. 41",
+        "adresszusatz": "c/o wiedemann",
+        "plz": "81735",
+        "stadt": "münchen",
+        "ort": "bayern",
+        "land": "deutchland"
+      },
+      "tel": "+4915730484802",
+      "standardadresse": ""
+    },
+
+    {
+      "fullName": "liana gogoladze",
+      "adresse": {
+        "strHeusnummer": "kurt-eisner-str. 41",
+        "adresszusatz": "c/o wiedemann",
+        "plz": "81735",
+        "stadt": "münchen",
+        "ort": "bayern",
+        "land": "deutchland"
+      },
+      "tel": "+4915730484802",
+      "standardadresse": ""
+    }
   ]
 }

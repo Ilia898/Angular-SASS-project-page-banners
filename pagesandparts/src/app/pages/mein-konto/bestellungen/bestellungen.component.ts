@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {faBagShopping, faTruck, faGift } from '@fortawesome/free-solid-svg-icons';
-import meinKonto from '../../../../Json/mein-konto.json';
+import meinKonto from '../../../Json/mein-konto.json';
 
 @Component({
   selector: 'app-bestellungen',

@@ -4,9 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { MeinKontoComponent } from './mein-konto.component';
-import { AdressenComponent } from './adressen/adressen/adressen.component';
-import { BestellungenComponent } from './bestellungen/bestellungen/bestellungen.component';
-import { KontodetailsComponent } from './kontodetails/kontodetails/kontodetails.component';
+import { AdressenComponent } from './adressen/adressen.component';
+import { BestellungenComponent } from './bestellungen/bestellungen.component';
+import { KontodetailsComponent } from './kontodetails/kontodetails.component';
 import { PosteingangComponent } from './posteingang/posteingang.component';
 const routes: Routes = [
   {path: 'bestellung', component: BestellungenComponent},

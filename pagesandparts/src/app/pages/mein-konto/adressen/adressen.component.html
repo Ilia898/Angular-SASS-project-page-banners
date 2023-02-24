@@ -1,0 +1,32 @@
+<div class="col-12-xs main-container">
+  <div class="container-header">
+    <h1>{{title}}</h1>
+  </div>
+
+  <div class="plus-card">
+    <div class="plus-text">
+      <fa-icon [icon]="iconPlus"></fa-icon>
+      <h1>adresse hinzufügen</h1>
+    </div>
+  </div>
+  <div class="col-11-xs adresse-card">
+    <div class="block" *ngFor="let adresse of adressen">
+      <div class="standard">
+        {{adresse.standardadresse}}
+      </div>
+      <ul>
+        <li>- {{adresse.fullName}}</li>
+        <li>- {{adresse.adresse.adresszusatz}}</li>
+        <li>- {{adresse.adresse.strHeusnummer}}</li>
+        <li>- {{adresse.adresse.stadt}}, {{adresse.adresse.ort}} {{adresse.adresse.plz}}</li>
+        <li>- {{adresse.adresse.land}}</li>
+        <li>- {{adresse.tel}}</li>
+      </ul>
+      <div class="links">
+        <a href="">bearbeiten</a>
+        <a href="" *ngIf="!adresse.standardadresse">| entfernen</a>
+        <a href="" *ngIf="!adresse.standardadresse">| als standard festlegen</a>
+      </div>
+    </div>
+  </div>
+</div>

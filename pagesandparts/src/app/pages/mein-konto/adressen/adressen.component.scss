@@ -1,0 +1,87 @@
+@import '../../../config-sass/index.scss';
+
+
+.main-container{
+
+  .container-header{
+    margin-top: 2%;
+
+    h1{
+      margin-left: 5%;
+      color: $mytext;
+      font-size: 18px;
+      font-family: Nregular;
+      text-transform: capitalize;
+      text-decoration: underline;
+    }
+  }
+
+  .plus-card{
+    display: flex;
+    width: 250px;
+    height: 200px;
+    margin-left: 4%;
+    border: 2px dashed $myPrimary5-1;
+    border-radius: 8px;
+    //background: red;
+
+    .plus-text{
+      margin: auto;
+      color: $mytext;
+      text-align: center;
+
+      fa-icon{
+        font-size: 40px;
+      }
+
+      h1{
+        margin-top: 0;
+        font-size: 20px;
+        font-family: Nbold;
+      }
+    }
+  }
+
+  .adresse-card{
+    margin: auto;
+
+    .block{
+      float: left;
+      width: 300px;
+      height: 100%;
+      margin: 1% 2% 1% 0;
+      padding: 2%;
+      color: $mytext;
+      font-family:NsemiBold;
+      font-size: 15px;
+      text-transform: capitalize;
+      border-radius: 8px;
+      background: $myPrimary6;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+
+      @include md {width: 400px;}
+
+      .standard{
+        height: 15px;
+        font-family: Nbold;
+      }
+
+      ul{
+        padding: 0 5%;
+        text-transform: capitalize;
+        list-style-type: none;
+      }
+
+      .links{
+
+        a{
+          margin-right: 5px;
+          color: $mytext;
+          cursor: pointer;
+
+          &:hover {color: $myPrimary2;}
+        }
+      }
+    }
+  }
+}

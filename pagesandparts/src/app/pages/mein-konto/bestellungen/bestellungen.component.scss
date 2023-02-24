@@ -1,11 +1,9 @@
-@import '../../../../config-sass/index.scss';
+@import '../../../config-sass/index.scss';
 
 .main-container{
 
   .container-header{
     margin-top: 2%;
-
-
 
     h1{
       margin-left: 5%;
@@ -38,7 +36,7 @@
   }
 
   .bst-block{
-    padding: 2%;
+    padding: 1% 0;
     border-radius: 8px;
     background: $myPrimary6;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.07);
