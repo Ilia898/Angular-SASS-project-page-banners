@@ -1,4 +1,4 @@
-@import '../../../../config-sass/index.scss';
+@import '../../../config-sass/index.scss';
 
 .main-container{
 
@@ -13,5 +13,63 @@
       text-transform: capitalize;
       text-decoration: underline;
     }
- }
+  }
+
+  .konto-container{
+    margin-top: 5%;
+
+    .konto-block{
+      margin: 2% auto;
+      font-family: Nregular;
+      border-radius: 8px;
+      border: 1px solid $myPrimary5;
+
+      .text{
+        padding: 2% 5% ;
+        line-height: 30px;
+        text-transform: capitalize;
+        border-bottom: 1px solid $myPrimary5;
+        overflow: auto;
+
+        .btn-bearbeiten{
+          @include btn-in($myPrimary4);
+          float: right;
+          padding: 3px 10px;
+          font-size: 12px;
+          cursor: pointer;
+        }
+
+        .btn-speichern{
+          @include btn-in($myImageBack3);
+          float: right;
+          padding: 3px 10px;
+          font-size: 12px;
+          cursor: pointer;
+        }
+
+        .input-text{
+          input{
+            width: 30%;
+            padding: 1%;
+            border-radius: 4px;
+            border: 1px solid $myPrimary5-1 ;
+          }
+        }
+
+      }
+
+      .email{
+        text-transform: lowercase;
+      }
+
+      .passwort{
+        border: none;
+      }
+
+      span{
+        text-transform: capitalize;
+        font-family: Nbold;
+      }
+    }
+  }
 }

@@ -2,4 +2,43 @@
   <div class="container-header">
     <h1>{{title}}</h1>
   </div>
+
+  <div class="col-12-xs konto-container">
+    <div class="col-8-md col-12-xs konto-block">
+      <div class="text"><span>vorname: </span><br>{{ inputVorname }}
+        <a class="btn-bearbeiten"
+           (click)="btnHiddenVorname = !btnHiddenVorname"
+           *ngIf="btnHiddenVorname">bearbeiten
+        </a>
+        <a class="btn-speichern"
+           (click)="btnSpeichernVorname()"
+           *ngIf="!btnHiddenVorname">speichern
+        </a>
+
+        <div class="input-text" *ngIf="!btnHiddenVorname">
+          <input type="text" placeholder="..." [(ngModel)] = "inputVorname" >
+        </div>
+      </div>
+      <div class="text"><span>nachname: </span><br>{{ inputNachname }}
+        <a class="btn-bearbeiten"
+           (click)="btnHiddenNachname = !btnHiddenNachname"
+           *ngIf="btnHiddenNachname">bearbeiten
+        </a>
+        <a class="btn-speichern"
+          (click)="btnSpeichernNachname()"
+          *ngIf="!btnHiddenNachname">speichern
+        </a>
+
+        <div class="input-text" *ngIf="!btnHiddenNachname">
+          <input type="text" placeholder="..." [(ngModel)] = "inputNachname" >
+        </div>
+      </div>
+      <div class="text email"><span>e-mail: </span><br>{{ kontoBlock.email }}
+        <a class="btn-bearbeiten" href="">bearbeiten</a>
+      </div>
+      <div class="text passwort"><span>passwort: </span><br>{{ kontoBlock.passwort }}
+        <a class="btn-bearbeiten" href="">bearbeiten</a>
+      </div>
+    </div>
+  </div>
 </div>

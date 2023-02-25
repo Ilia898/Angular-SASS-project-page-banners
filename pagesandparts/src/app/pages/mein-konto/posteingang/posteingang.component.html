@@ -3,5 +3,15 @@
     <h1>{{title}}</h1>
   </div>
 
-
+  <div class="col-11-xs posteingang-container">
+    <div class="posteingang-block" *ngFor="let post of posteingang; let i=index">
+      <div class="data">{{post.data}}</div>
+      <div class="betreff" (click)="hiddenText[i]=!hiddenText[i]">
+        {{post.betreff}}
+      </div>
+      <div class="text-block" *ngIf="hiddenText[i]">
+        <div class="text">{{post.text}}</div>
+      </div>
+    </div>
+  </div>
 </div>

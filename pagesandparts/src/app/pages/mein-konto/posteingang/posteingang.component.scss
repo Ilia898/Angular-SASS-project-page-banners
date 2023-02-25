@@ -13,5 +13,38 @@
       text-transform: capitalize;
       text-decoration: underline;
     }
- }
+  }
+
+  .posteingang-container{
+    margin: auto;
+    padding: 0 1%;
+    color: $mytext;
+    font-family: Nregular;
+    border: 2px solid $myPrimary5;
+    border-radius: 8px;
+
+    .posteingang-block{
+      margin: 2% 0;
+      padding: 1%;
+      border-bottom: 1px solid $myPrimary5;
+
+      .data{
+        margin-left: 1%;
+        font-family: Nbold;
+      }
+
+      .betreff{
+        margin-left: 1%;
+        font-family: Nbold;
+        cursor: pointer;
+      }
+
+      .text-block{
+        margin: 1% 10% 1% 0;
+        padding: 2%;
+        border: 1px solid $myPrimary5;
+        border-radius: 8px;
+      }
+    }
+  }
 }

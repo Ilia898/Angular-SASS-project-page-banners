@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
 
 import { MeinKontoComponent } from './mein-konto.component';
 import { AdressenComponent } from './adressen/adressen.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forRoot(routes),
     FontAwesomeModule,
+    FormsModule
 
   ],
   declarations: [

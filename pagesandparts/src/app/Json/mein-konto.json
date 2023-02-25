@@ -9,14 +9,14 @@
 
     {
      "path": "adressen",
-     "img": "../../assets/mein-konto-image/myk-2.png",
+     "img": "../../assets/mein-konto-image/myk-3.png",
      "h1": "Adressen",
      "p": "Adresse ändern"
     },
 
     {
      "path": "konto",
-     "img": "../../assets/mein-konto-image/myk-3.png",
+     "img": "../../assets/mein-konto-image/myk-2.png",
      "h1": "Meine Kontodetails",
      "p": "Bearbeiten Sie Ihre Anmeldedaten"
     },
@@ -109,6 +109,35 @@
       },
       "tel": "+4915730484802",
       "standardadresse": ""
+    }
+  ],
+
+  "posteingangBlock":[
+    {
+      "data": "23.02.2023",
+      "betreff": "Lorem ipsum dolor sit amet, consectetur adipisici elit",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    },
+
+    {
+      "data": "23.01.2023",
+      "betreff": "Lorem ipsum dolor sit amet, consectetur adipisici elit",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    },
+
+    {
+      "data": "23.12.2022",
+      "betreff": "Lorem ipsum dolor sit amet, ",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    }
+  ],
+
+  "kontodetailsBlock": [
+    {
+      "vorname": "ilia",
+      "nachname": "tskhvediani",
+      "email": "iliatskhvedianis@gmail.com",
+      "passwort": "********"
     }
   ]
 }
