@@ -1,30 +1,29 @@
  <div class="col-10-xs main-container">
   <h1>warenkorb</h1>
-  <div class="waren-block">
-    <div class="bst-block" *ngFor="let product of product">
-      <div class="image">
+  <div class="col-8-xs waren-block">
+    <div class="col-12-xs bst-block" *ngFor="let product of product">
+      <div class="col-6-xs image">
         <img [src]="product.image" alt="">
       </div>
       <div class="text-block">
         <h2>{{ product.title }}</h2>
         <div class="price"><P>{{product.price | currency: 'EUR': 'symbol'}}</P></div>
         <div class="menge">
-          <div class="triangle-menge">menge</div>
+          <span>menge:</span>
+          <input type="number" [placeholder]="product.menge">
+          <button>Aktualisieren</button>
         </div>
         <div class="links">
-          <a href="">löschen</a>
+          <a href="">| löschen</a>
         </div>
       </div>
     </div>
-
-    <div class="bay-box">
-      <div class="delivery"></div>
-      <div class="zwischensumme"></div>
-      <div class="versandkosten"></div>
-      <div class="gesamtsumme"></div>
-      <div class="btn"></div>
-    </div>
-
   </div>
-  <div class="buy-box"></div>
+  <div class="bay-box">
+    <div class="delivery"></div>
+    <div class="zwischensumme"></div>
+    <div class="versandkosten"></div>
+    <div class="gesamtsumme"></div>
+    <div class="btn"></div>
+  </div>
  </div>
