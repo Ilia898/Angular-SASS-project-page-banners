@@ -12,6 +12,8 @@ import { ProductComponent } from './pages/product/product.component';
 
 import { registerLocaleData } from '@angular/common';
 import localeDe from '@angular/common/locales/de';
+import { NichtGefundenComponent } from './pages/nicht-gefunden/nicht-gefunden.component';
+import { WarenkorbComponent } from './pages/warenkorb/warenkorb.component';
 
 
 registerLocaleData(localeDe, 'de-DE');
@@ -20,6 +22,8 @@ registerLocaleData(localeDe, 'de-DE');
   declarations: [
     AppComponent,
     ProductComponent,
+    NichtGefundenComponent,
+    WarenkorbComponent,
   ],
 
   imports: [

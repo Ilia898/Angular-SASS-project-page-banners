@@ -1,0 +1,21 @@
+@import '../../config-sass/index.scss';
+
+.main-container{
+  margin: auto;
+  text-transform: capitalize;
+
+  h1{
+    margin: 1%;
+    font-family: Nbold;
+    font-size: 20px;
+  }
+
+  .triangle-menge{
+    margin: 100px;
+    height: 50px;
+    transform: skew(20deg);
+    background: $myPrimary2;
+
+  }
+}
+

@@ -1,0 +1,40 @@
+@import '../../config-sass/index.scss';
+
+.main-container{
+  margin: 10% auto;
+  font-family: Nregular;
+  color: $mytext;
+  text-align: center;
+
+  .header{
+    margin: 2% auto;
+    h1{
+      margin: 0;
+      font-family: NextraBold;
+      font-size: 40px;
+    }
+
+    span{
+      font-family: Nmedium;
+      font-size: 20px;
+      color: $mytext;
+    }
+  }
+
+  .image{
+    margin: 2% auto;
+
+    img{
+      width: 200px;
+      height: 100%;
+    }
+  }
+
+  p{
+    color: $myImageBack1;
+
+    span{
+      text-decoration: underline;
+    }
+  }
+}
