@@ -11,7 +11,7 @@
           <div class="price"><P>{{product.price | currency: 'EUR': 'symbol'}}</P></div>
           <div class="menge">
             <span>menge:</span>
-            <input type="number" [placeholder]="product.menge">
+            <input type="number" [placeholder]="product.menge" [(ngModel)]="product.menge">
             <button>Aktualisieren</button>
           </div>
           <div class="links">
@@ -40,7 +40,7 @@
             <span>alle Angaben in Euro, inkl. Steuer</span>
           </div>
           <div class="number">
-            <span>75,75€</span>
+            <span>{{totalPrice | currency: 'EUR': 'symbol'}}</span>
           </div>
         </div>
       </div>
@@ -50,3 +50,4 @@
     </div>
   </div>
  </div>
+ <button (click)="hnhGgg()">jdsbfierwjs</button>
