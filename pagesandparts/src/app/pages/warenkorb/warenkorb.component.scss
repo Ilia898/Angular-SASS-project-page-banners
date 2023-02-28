@@ -1,5 +1,11 @@
 @import '../../config-sass/index.scss';
 
+@mixin rechner ($margin: 2%){
+  display: flex;
+  justify-content: space-between;
+  margin: $margin auto;
+}
+
 .main-container{
   margin: auto;
   text-transform: capitalize;
@@ -10,72 +16,158 @@
     font-size: 20px;
   }
 
-  .waren-block{
-    padding: 3%;
-    border-radius: 8px;
-    background: $myHeroBack;
+  .main-block{
+    display: flex;
 
-    .bst-block{
-      display: flex;
-      padding: 2% 0;
-      font-family: Nbold;
-      border-top: 1px solid $myPrimary5-1;
+    .waren-block{
+      padding: 3%;
+      border-radius: 8px;
+      border: 1px solid $myPrimary5;
+      background: $myHeroBack;
       border-bottom: 1px solid $myPrimary5-1;
 
-      .image{
-        img{
-          height: auto;
-          width: 100%;
+
+      .bst-block{
+        display: flex;
+        padding: 2% 0;
+        font-family: Nbold;
+        border-bottom: 1px solid $myPrimary5-1;
+
+        .image{
+          img{
+            height: auto;
+            width: 100%;
+          }
+        }
+        .text-block{
+          padding: 0 2%;
+
+          h2{
+            width: 300px;
+            font-size: 17px;
+            white-space: wrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .price{
+           margin-left: 2%;
+           font-size: 20px;
+          }
+          .menge{
+           margin-left: 2%;
+
+           span{
+            height: 20px;
+            padding: 4px 6px;
+            font-size: 14px;
+            color: $myPrimary6;
+            border-radius: 4px;
+            background: $myPrimary1;
+           }
+
+           input{
+            height: 24px;
+            width: 40px;
+            margin-left: 2px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid $myPrimary4;
+           }
+
+           button{
+            height: 27px;
+            padding: 2px;
+            margin-left: 3px;
+            border-radius: 4px;
+            border: none;
+            color: $myPrimary2;
+            text-decoration: underline;
+            cursor: pointer;
+           }
+          }
+        }
+
+        .links{
+          margin-left: 2%;
+          margin-top: 1%;
+
+          a{
+            float: right;
+            color: $mytext;
+            font-family: Nregular;
+            font-size: 15px;
+          }
         }
       }
-      .text-block{
-        padding: 0 2%;
+    }
 
-        h2{
-          font-size: 17px;
+    .buy-box{
+      height: 100%;
+      margin: 0 auto;
+      padding: 2%;
+      color: $mytext;
+      font-family: Nmedium;
+      font-size: 13px;
+      border: 1px solid $myPrimary5;
+      border-radius: 8px;
+      background: $myHeroBack;
+
+      .delivery-text{
+
+        fa-icon{
+          font-size: 15px;
+          color: $myImageBack3;
         }
-        .price{
-         margin-left: 2%;
-         font-size: 20px;
-        }
-        .menge{
-         margin-left: 2%;
 
-         span{
-          height: 20px;
-          padding: 4px 6px;
-          font-size: 14px;
-          color: $myPrimary6;
-          border-radius: 4px;
-          background: $myPrimary1;
-         }
-
-         input{
-          height: 24px;
-          width: 40px;
-          margin-left: 2px;
-          text-align: center;
-          border-radius: 4px;
-          border: 1px solid $myPrimary4;
-         }
-
-         button{
-          height: 27px;
-          padding: 2px;
-          margin-left: 3px;
-          border-radius: 4px;
-         }
+        span{
+          margin-left: 3%;
         }
       }
 
-      .links{
-        margin-left: 2%;
-        margin-top: 1%;
+      .rechner{
+        margin-top: 10%;
+
+        .number{
+          font-family: NextraBold;
+          font-size: 15px;
+        }
+
+        .zwischensumme{
+          @include rechner();
+        }
+
+        .versandkosten{
+          @include rechner();
+        }
+
+        .gesamtsumme{
+          @include rechner(0%);
+          padding-top: 2%;
+          border-top: 1px solid $myPrimary5-1;
+
+          .text{
+            font-family: NextraBold;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .btn{
+        margin-top: 5%;
+        padding: 3%;
+        text-align: center;
+        border-radius: 8px;
+        background: $myPrimary2;
 
         a{
-          color: $mytext;
+          color: $myPrimary6;
+          font-family: NextraBold;
+          font-size: 15px;
+          text-decoration: none;
         }
       }
+
+
     }
   }
 }

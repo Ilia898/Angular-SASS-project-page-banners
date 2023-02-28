@@ -1,29 +1,52 @@
  <div class="col-10-xs main-container">
   <h1>warenkorb</h1>
-  <div class="col-8-xs waren-block">
-    <div class="col-12-xs bst-block" *ngFor="let product of product">
-      <div class="col-6-xs image">
-        <img [src]="product.image" alt="">
-      </div>
-      <div class="text-block">
-        <h2>{{ product.title }}</h2>
-        <div class="price"><P>{{product.price | currency: 'EUR': 'symbol'}}</P></div>
-        <div class="menge">
-          <span>menge:</span>
-          <input type="number" [placeholder]="product.menge">
-          <button>Aktualisieren</button>
+  <div class="main-block">
+    <div class="col-8-xs waren-block">
+      <div class="col-12-xs bst-block" *ngFor="let product of product">
+        <div class="col-2-xs image">
+          <img [src]="product.image" alt="">
         </div>
-        <div class="links">
-          <a href="">| löschen</a>
+        <div class="col-10-xs text-block">
+          <h2>{{ product.title }}</h2>
+          <div class="price"><P>{{product.price | currency: 'EUR': 'symbol'}}</P></div>
+          <div class="menge">
+            <span>menge:</span>
+            <input type="number" [placeholder]="product.menge">
+            <button>Aktualisieren</button>
+          </div>
+          <div class="links">
+            <a href="">löschen</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="bay-box">
-    <div class="delivery"></div>
-    <div class="zwischensumme"></div>
-    <div class="versandkosten"></div>
-    <div class="gesamtsumme"></div>
-    <div class="btn"></div>
+    <div class="col-3-xs buy-box">
+      <div class="delivery-text">
+        <fa-icon [icon]="iconCheck"></fa-icon>
+        <span>Lieferungen innerhalb Deutschlands
+          per Standardversand sind kostenfrei</span>
+      </div>
+      <div class="rechner">
+        <div class="zwischensumme">
+          <div><span>Zwischensumme (2 Artikel):</span></div>
+          <div class="number"><span>75,75€</span></div>
+        </div>
+        <div class="versandkosten">
+          <div><span>Versandkosten (Paket):</span></div>
+          <div class="number"><span>0,00€</span></div>
+        </div>
+        <div class="gesamtsumme">
+          <div><span class="text">Gesamtsumme:</span><br>
+            <span>alle Angaben in Euro, inkl. Steuer</span>
+          </div>
+          <div class="number">
+            <span>75,75€</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12-xs btn">
+        <a href="">Zur Kasse gehen</a>
+      </div>
+    </div>
   </div>
  </div>
