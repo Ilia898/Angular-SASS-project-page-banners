@@ -1,0 +1,7 @@
+<div *ngFor="let item of items">
+  <div>{{item.name}}</div>
+  <input type="text" [(ngModel)]="item.quantity">
+  <div>Price: {{item.price}}</div>
+  <div>Total: {{item.price * item.quantity}}</div>
+</div>
+

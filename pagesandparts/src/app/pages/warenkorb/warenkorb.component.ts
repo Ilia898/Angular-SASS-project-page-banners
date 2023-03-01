@@ -12,22 +12,24 @@ export class WarenkorbComponent {
   iconCheck = faCheckSquare;
   product = products.products;
 
-
   totalPrice = 0;
+  versandKosten = 0;
 
   ngOnInit() {
-    this.totalPrice = this.product.reduce((sum: any, item: {
-      menge: any; price: any;
-}) => sum + (item.price *  item.menge), 0);
+    this.calculateTotalPrice();
+//     this.totalPrice = this.product.reduce((sum: any, item: {
+//       menge: any; price: any;
+// }) => sum + (item.price * item.menge), 0);
+
+
   }
 
+  calculateTotalPrice() {
+    this.totalPrice = 0;
+    for (const product of this.product) {
+      this.totalPrice += product.price * product.menge;
+    }
 
-  hnhGgg(){
-    console.log(this.product.menge);
   }
-
-
-
-
 }
 

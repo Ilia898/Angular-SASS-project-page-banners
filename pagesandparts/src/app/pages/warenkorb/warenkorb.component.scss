@@ -17,14 +17,14 @@
   }
 
   .main-block{
-    display: flex;
+    display: block;
+    @include lg {display: flex;}
 
     .waren-block{
       padding: 3%;
       border-radius: 8px;
       border: 1px solid $myPrimary5;
       background: $myHeroBack;
-      border-bottom: 1px solid $myPrimary5-1;
 
 
       .bst-block{
@@ -34,68 +34,90 @@
         border-bottom: 1px solid $myPrimary5-1;
 
         .image{
+          margin: auto;
+
           img{
             height: auto;
             width: 100%;
           }
         }
+
         .text-block{
+          margin: auto 0;
           padding: 0 2%;
 
           h2{
-            width: 300px;
-            font-size: 17px;
+            height: 16px;
+            margin: 0px;
+            font-size: 12px;
             white-space: wrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            @include sm {height: 30px;}
+            @include md {height: 50px; font-size: 17px;}
           }
-          .price{
-           margin-left: 2%;
-           font-size: 20px;
+
+          .price {
+           margin: 2%;
+           font-size: 12px;
+           @include sm {font-size: 15px;}
+           @include md {font-size: 20px;}
           }
-          .menge{
-           margin-left: 2%;
 
-           span{
-            height: 20px;
-            padding: 4px 6px;
-            font-size: 14px;
-            color: $myPrimary6;
-            border-radius: 4px;
-            background: $myPrimary1;
-           }
-
-           input{
-            height: 24px;
-            width: 40px;
-            margin-left: 2px;
-            text-align: center;
-            border-radius: 4px;
-            border: 1px solid $myPrimary4;
-           }
-
-           button{
-            height: 27px;
-            padding: 2px;
-            margin-left: 3px;
-            border-radius: 4px;
-            border: none;
-            color: $myPrimary2;
-            text-decoration: underline;
-            cursor: pointer;
-           }
-          }
         }
 
-        .links{
-          margin-left: 2%;
-          margin-top: 1%;
+        .menge-links{
+          display: flex;
+          margin: 2%;
 
-          a{
-            float: right;
-            color: $mytext;
-            font-family: Nregular;
-            font-size: 15px;
+          .menge {
+
+            span{
+             padding: 2px 6px;
+             font-size: 11px;
+             color: $myPrimary6;
+             border-radius: 4px;
+             background: $myPrimary1;
+             @include sm {padding: 4px 6px;}
+             @include md {font-size: 14px;}
+            }
+
+            input{
+             height: 15px;
+             width: 40px;
+             margin-left: 2px;
+             text-align: center;
+             border-radius: 4px;
+             border: 1px solid $myPrimary4;
+             @include sm {height: 20px;}
+             @include md {height: 24px;}
+            }
+
+            button{
+             height: 27px;
+             padding: 2px;
+             margin-left: 3px;
+             border-radius: 4px;
+             border: none;
+             color: $myPrimary1;
+             text-decoration: underline;
+             background: none;
+             cursor: pointer;
+            }
+           }
+
+          .links{
+            margin-left: 2%;
+            margin-top: 1%;
+
+            a{
+              float: right;
+              color: $mytext;
+              font-family: Nregular;
+              font-size: 12px;
+              @include sm {font-size: 13px;}
+              @include md {font-size: 15px;}
+            }
           }
         }
       }
@@ -103,7 +125,7 @@
 
     .buy-box{
       height: 100%;
-      margin: 0 auto;
+      margin: 2% auto;
       padding: 2%;
       color: $mytext;
       font-family: Nmedium;
@@ -111,6 +133,7 @@
       border: 1px solid $myPrimary5;
       border-radius: 8px;
       background: $myHeroBack;
+      @include lg {margin: 0 auto;}
 
       .delivery-text{
 
@@ -125,7 +148,8 @@
       }
 
       .rechner{
-        margin-top: 10%;
+        margin-top: 5%;
+        @include lg {margin-top: 10%;}
 
         .number{
           font-family: NextraBold;
@@ -154,10 +178,11 @@
 
       .btn{
         margin-top: 5%;
-        padding: 3%;
+        padding: 1.5%;
         text-align: center;
         border-radius: 8px;
         background: $myPrimary2;
+        @include lg {padding: 3%;}
 
         a{
           color: $myPrimary6;

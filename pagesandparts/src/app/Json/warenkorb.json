@@ -5,7 +5,7 @@
       "title":"Erwecken Sie die Fantasie Ihres Kindes mit einem personalisierten Kinder-Magazin, das eine umfangreiche Tier-Enzyklopädie, kurzweilige Geschichten und kreativeGestaltungsmöglichkeiten bietet",
       "price":10.00,
       "menge": 1,
-      "versandkosten":0.00
+      "versandkosten":0
     },
 
     {
@@ -13,7 +13,7 @@
       "title":"Erwecken Sie die Fantasie Ihres Kindes mit einem personalisierten Kinder-Magazin, das eine umfangreiche Tier-Enzyklopädie, kurzweilige Geschichten und kreativeGestaltungsmöglichkeiten bietet",
       "price":20.00,
       "menge": 1,
-      "versandkosten":0.00
+      "versandkosten":0
     }
   ]
 }
