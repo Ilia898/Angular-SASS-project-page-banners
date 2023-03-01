@@ -1,39 +1,56 @@
-{ "bulet": [
-  {"buleti": "Einzigartiges Lern- und Unterhaltungserlebnis für junge Tierliebhaber und Geschichtenerzähler."},
-  {"buleti":"Enzyklopädie der Tierwelt, die Lebensräume, Verhaltensweisen und Merkmale von Tieren erklärt."},
-  {"buleti":"Auswahl an spannenden Kurzgeschichten für Kinder mit wichtigen Lektionen wie Freundschaft, Zusammenhalt, Umweltschutz und Respekt für Tiere."},
-  {"buleti":"Vollständig personalisierbar mit Fotos Ihres Kindes auf dem Cover, in Geschichten und Aktivitäten."},
-  {"buleti":"Hochwertiger Druck auf A4-Papier mit 58 Seiten und perfekt für gemütliche Lesestunden zu Hause oder unterwegs."}
-  ],
+{
+  "mainProducts": [
+    {
+      "id": "1",
+      "productTitle":"Erwecken Sie die Fantasie Ihres Kindes mit einem personalisierten Kinder-Magazin, das eine umfangreiche Tier-Enzyklopädie, kurzweilige Geschichten und kreative Gestaltungsmöglichkeiten bietet",
+      "priceValue": 25.25,
+      "menge": 1,
+      "productsImage":[
+        {"id": "0", "url": "../../assets/product-slider-image/HOME.jpg"},
+        {"id": "1", "url": "../../assets/product-slider-image/HOME4.jpg"},
+        {"id": "2", "url": "../../assets/product-slider-image/HOME7.jpg"},
+        {"id": "3", "url": "../../assets/product-slider-image/HOME17.jpg"},
+        {"id": "4", "url": "../../assets/product-slider-image/HOME48.jpg"}
+      ],
 
-  "shortDescription":{"text": "Das Kinder-Magazin ist ein lustiges und lehrreiches Erlebnis für junge Tierliebhaber und Geschichtenerzähler. Jede Ausgabe enthält eine Enzyklopädie der Tierwelt und eine Auswahl von Kurzgeschichten, die speziell für Kinder geschrieben wurden. Die Geschichten vermitteln wichtige Werte wie Freundschaft, Zusammenhalt und Respekt für Tiere. Das Magazin ist mit einem Online-Tool vollständig anpassbar, und Sie können Fotos Ihres Kindes hinzufügen, um es zu einem einzigartigen und personalisierten Geschenk zu machen. Das Magazin wird auf hochwertigem Papier gedruckt und ist eine großartige Möglichkeit zu lernen und Spaß beim Lesen zu haben."},
+      "bulet": [
+        {"buleti": "Einzigartiges Lern- und Unterhaltungserlebnis für junge Tierliebhaber und Geschichtenerzähler."},
+        {"buleti":"Enzyklopädie der Tierwelt, die Lebensräume, Verhaltensweisen und Merkmale von Tieren erklärt."},
+        {"buleti":"Auswahl an spannenden Kurzgeschichten für Kinder mit wichtigen Lektionen wie Freundschaft, Zusammenhalt, Umweltschutz und Respekt für Tiere."},
+        {"buleti":"Vollständig personalisierbar mit Fotos Ihres Kindes auf dem Cover, in Geschichten und Aktivitäten."},
+        {"buleti":"Hochwertiger Druck auf A4-Papier mit 58 Seiten und perfekt für gemütliche Lesestunden zu Hause oder unterwegs."}
+        ],
 
-  "descriptionImage":[
-    {"image": "../../assets/product-slider-image/product-description-image/HOME.jpg"},
-    {"image": "../../assets/product-slider-image/product-description-image/HOME19.jpg"},
-    {"image": "../../assets/product-slider-image/product-description-image/HOME48.jpg"}
+        "shortDescription":{"text": "Das Kinder-Magazin ist ein lustiges und lehrreiches Erlebnis für junge Tierliebhaber und Geschichtenerzähler. Jede Ausgabe enthält eine Enzyklopädie der Tierwelt und eine Auswahl von Kurzgeschichten, die speziell für Kinder geschrieben wurden. Die Geschichten vermitteln wichtige Werte wie Freundschaft, Zusammenhalt und Respekt für Tiere. Das Magazin ist mit einem Online-Tool vollständig anpassbar, und Sie können Fotos Ihres Kindes hinzufügen, um es zu einem einzigartigen und personalisierten Geschenk zu machen. Das Magazin wird auf hochwertigem Papier gedruckt und ist eine großartige Möglichkeit zu lernen und Spaß beim Lesen zu haben."},
 
-  ],
+        "descriptionImage":[
+          {"image": "../../assets/product-slider-image/product-description-image/HOME.jpg"},
+          {"image": "../../assets/product-slider-image/product-description-image/HOME19.jpg"},
+          {"image": "../../assets/product-slider-image/product-description-image/HOME48.jpg"}
 
-  "details": [
-    {"detailTitle":"Produktbezeichnung:",
-      "detailText":"Abizeitung mit Drahtheftung, Endformat DIN A4, 58-seitig."
-    },
+        ],
 
-    {"detailTitle":"Format:",
-     "detailText":"210 x 297 mm."
-    },
+        "details": [
+          {"detailTitle":"Produktbezeichnung:",
+            "detailText":"Abizeitung mit Drahtheftung, Endformat DIN A4, 58-seitig."
+          },
 
-    {"detailTitle":"Sorte:",
-    "detailText":"115g Innenteil (glänzend) || 170g Umschlag (glänzend)."
-    },
+          {"detailTitle":"Format:",
+           "detailText":"210 x 297 mm."
+          },
 
-    {"detailTitle":"Seitenanzahl:",
-     "detailText":"58 Seite(n)"
-    },
+          {"detailTitle":"Sorte:",
+          "detailText":"115g Innenteil (glänzend) || 170g Umschlag (glänzend)."
+          },
 
-    {"detailTitle":"Farbigkeit:",
-    "detailText":"4/4-farbig"
+          {"detailTitle":"Seitenanzahl:",
+           "detailText":"58 Seite(n)"
+          },
+
+          {"detailTitle":"Farbigkeit:",
+          "detailText":"4/4-farbig"
+          }
+         ]
     }
   ]
 }

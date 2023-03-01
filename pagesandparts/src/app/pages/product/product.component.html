@@ -1,12 +1,12 @@
 <div class="col-10-sm col-11-xs product-container">
   <div class="col-12-xs product-block">
     <div class="col-12-xs title-sm">
-      <h1>{{productTitle}}</h1>
+      <h1>{{product.productTitle}}</h1>
     </div>
     <div col-12-xs class="block-image-title">
       <div class="col-5-md col-6-sm col-12-xs images-block">
         <div class="col-2-xs images-line">
-          <div class="col-12-xs line" *ngFor=" let proImage of productsImage">
+          <div class="col-12-xs line" *ngFor=" let proImage of product.productsImage">
             <img (click)="imagePreview(proImage)" [src]="proImage.url" alt="Magazin" [id]="proImage.id">
           </div>
         </div>
@@ -14,14 +14,14 @@
           <img [src]="mainImage" alt="Magazin">
         </div>
         <div class="col-10-sm col-12-xs images-line-md">
-          <div class="col-12-xs line" *ngFor=" let proImage of productsImage">
+          <div class="col-12-xs line" *ngFor=" let proImage of product.productsImage">
             <img (click)="imagePreview(proImage)" [src]="proImage.url" alt="Magazin" [id]="proImage.id">
           </div>
         </div>
       </div>
       <div class="col-7-md col-6-sm col-12-xs title-block">
         <div class="col-12-xs title">
-          <h1>{{productTitle}}</h1>
+          <h1>{{product.productTitle}}</h1>
         </div>
         <div class="col-12-xs rating">
           <span>Kritiken und Bewertungen</span>
@@ -34,7 +34,7 @@
           <span>{{valueRate}} Sternebewertungen</span>
         </div>
         <div class="col-12-xs price">
-          <p>{{priceValue | currency: 'EUR': "symbol"}}</p>
+          <p>{{product.priceValue | currency: 'EUR': "symbol"}}</p>
         </div>
         <div class="col-12-xs btns">
           <a href="">Jetzt personalisieren</a>
@@ -51,21 +51,23 @@
   <div class="col-12-xs description-block">
     <div class="col-12-xs description">
       <h1>Artikelbeschreibung</h1>
-      <ul *ngFor="let bulet of description.bulet">
+      <ul *ngFor="let bulet of product.bulet">
         <li>{{bulet.buleti}}</li>
       </ul>
-      <p>{{description.shortDescription.text}}</p>
+      <p>{{product.shortDescription.text}}</p>
     </div>
     <div class="col-12-xs description-image">
-      <div class="col-12-xs image" *ngFor="let image of description.descriptionImage">
+      <div class="col-12-xs image" *ngFor="let image of product.descriptionImage">
         <img [src]="image.image" alt="Image">
       </div>
     </div>
     <div class="col-12-xs description-details">
       <h1>Details</h1>
-      <ul *ngFor="let detail of description.details">
+      <ul *ngFor="let detail of product.details">
         <li><span>{{detail.detailTitle}}</span> {{detail.detailText}}</li>
       </ul>
     </div>
   </div>
 </div>
+
+<button (click)="test()">kldsnkjrejnfodmkls</button>
