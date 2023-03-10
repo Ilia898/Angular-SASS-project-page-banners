@@ -6,6 +6,7 @@
     (mousedown)="setStatus($event, 2)"
     (window:mouseup)="setStatus($event, 0)"
 >
+    <img src="../../assets/cropper/little-girl-smiles-with-bucket-popcorn.jpg" width="700" height="auto" alt="">
     <div class="resize-action" (mousedown)="setStatus($event, 1)"></div>
     <span>{{width | number:'1.0-0'}}px</span>
     <span>{{height | number:'1.0-0'}}px</span>
