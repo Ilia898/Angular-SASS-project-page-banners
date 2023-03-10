@@ -38,7 +38,6 @@ registerLocaleData(localeDe, 'de-DE');
     MeinKontoModule,
     AppRoutingModule,
     EditorModule,
-    BrowserAnimationsModule
 
   ],
 

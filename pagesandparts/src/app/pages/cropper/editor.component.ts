@@ -15,7 +15,7 @@ export class EditorComponent implements OnInit  {
 
   constructor(
     // private _dialog: LyDialog,
-    private _cd: ChangeDetectorRef
+    // private _cd: ChangeDetectorRef
   ) { }
 
   openCropperDialog(event: Event) {
