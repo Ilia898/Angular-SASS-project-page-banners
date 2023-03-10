@@ -33,7 +33,8 @@ registerLocaleData(localeDe, 'de-DE');
     FormsModule,
     FontAwesomeModule,
     MeinKontoModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
 
   providers: [

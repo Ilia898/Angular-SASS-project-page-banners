@@ -1,0 +1,21 @@
+<div class="cropper-container" [ngStyle]="{backgroundImage:'url(../../assets/cropper/little-girl-winter-knitted-hat-sweater.jpg)'}">
+
+  <div class="cropper-upload-btn">
+
+
+    <input #_fileInput type="file" (change)="openCropperDialog($event)" accept="image/*" hidden>
+
+    <button type="button" class="btn btn-outline-secondary upload-btn" (click)="_fileInput.click()">
+      <i class="bi bi-image" up-ima-icon></i>
+      <h2>Auswählen</h2>
+
+    </button>
+
+  </div>
+
+  <div *ngIf="cropped" class="cropped-box">
+    <img class="cropped-image" [src]="cropped">
+    <button type="button" class="btn btn-danger btnclose"  (click)="closeCroppedImage()"><i class="bi bi-x-lg"></i></button>
+  </div>
+
+</div>
