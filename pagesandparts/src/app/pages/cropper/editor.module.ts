@@ -27,4 +27,4 @@ import {EditorComponent} from './editor.component';
   declarations:[EditorComponent, EditorDialog],
   exports: [EditorComponent]
 })
-export class MycropperModule { }
+export class EditorModule { }
