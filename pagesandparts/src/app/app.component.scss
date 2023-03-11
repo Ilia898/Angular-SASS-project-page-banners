@@ -1,11 +1,9 @@
 .box-container {
-  position: absolute;
+  position: relative;
   width: 600px;
   height: 450px;
+  margin-top: 5%;
   outline: 1px solid black;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
 
   span:first-of-type {
       position: absolute;

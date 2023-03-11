@@ -24,6 +24,18 @@ export class TestComponent implements OnInit, AfterViewInit {
   public status: Status = Status.OFF;
   private mouseClick!: {x: number, y: number, left: number, top: number}
 
+  imageSrc: string = '';
+
+  onFileSelected(event: any) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+      this.imageSrc = reader.result as string;
+    };
+    console.log(file, reader);
+  }
+
   ngOnInit() {}
 
   ngAfterViewInit(){
