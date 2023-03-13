@@ -99,4 +99,23 @@ export class TestComponent implements OnInit, AfterViewInit {
   //     );
   // }
 
+  btnBack(){
+    this.imageSrc;
+  }
+
+  btnUp(){
+    this.width = this.width + 10;
+    this.height = this.height + 10;
+  }
+
+  btnDown(){
+    this.width = this.width - 10;
+    this.height = this.height - 10;
+  }
+
+
+
+
+
+
 }

@@ -18,18 +18,20 @@ import { NichtGefundenComponent } from './pages/nicht-gefunden/nicht-gefunden.co
 import { WarenkorbComponent } from './pages/warenkorb/warenkorb.component';
 import { TestComponent } from './test/test.component';
 import { ImgCropperModule } from './pages/img-cropper/img-cropper.module';
+import { CropperTestComponent } from './cropper-test/cropper-test.component';
 
 
 registerLocaleData(localeDe, 'de-DE');
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     ProductComponent,
     NichtGefundenComponent,
     WarenkorbComponent,
     TestComponent,
-  ],
+      CropperTestComponent
+   ],
 
   imports: [
     BrowserModule,

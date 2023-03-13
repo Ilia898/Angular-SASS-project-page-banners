@@ -1,0 +1,8 @@
+<div #imageContainer [style.width.px]="imageWidth" [style.height.px]="imageHeight">
+  <img #image [src]="imageSrc" [style.width.px]="imageWidth" [style.height.px]="imageHeight">
+  <div #cropArea [style.width.px]="cropWidth" [style.height.px]="cropHeight"
+       [style.top.px]="cropTop" [style.left.px]="cropLeft">
+  </div>
+</div>
+<canvas #preview [width]="previewWidth" [height]="previewHeight"></canvas>
+<button (click)="cropImage()">Crop</button>
