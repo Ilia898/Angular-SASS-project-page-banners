@@ -7,11 +7,9 @@
     <div *ngIf="imageSrc" class="image-div"
     [style.width.px]="width"
     [style.height.px]="height"
-
-
     ><img [src]="imageSrc"
-    [style.width.%]="widthA"
-    [style.height.auto]="heightA"
+    [style.width]="widthO"
+    [style.height]="heightO"
     [style.transform]="'translate3d('+ left + 'px,' + top + 'px,' + '0px)'"
     [class.active]="status === 1 || status === 2"
     (mousedown)="setStatus($event, 2)"
@@ -31,3 +29,4 @@
 <button (click)="btnPlus()">plus</button>
 <button (click)="btnMinus()">minus</button>
 <button (click)="btnBack()">back</button>
+<button (click)="btnFit()">fit</button>

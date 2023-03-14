@@ -17,6 +17,7 @@ export class TestComponent implements OnInit, AfterViewInit {
   @Input('height') public height!: number;
   @Input('left') public left!: number;
   @Input('top') public top!: number;
+  @Input('right') public right!: number;
   @ViewChild("box") public box!: ElementRef;
   private boxPosition!: { left: number, top: number };
   private containerPos!: { left: number, top: number, right: number, bottom: number };
@@ -25,8 +26,11 @@ export class TestComponent implements OnInit, AfterViewInit {
   private mouseClick!: {x: number, y: number, left: number, top: number}
 
   imageSrc: string = '';
-  widthA = 100;
-  heightA = '';
+  widthO: any;
+  heightO: any;
+  perzent = 100;
+
+
 
   onFileSelected(event: any) {
     const file = event.target.files[0];
@@ -34,6 +38,21 @@ export class TestComponent implements OnInit, AfterViewInit {
     reader.readAsDataURL(file);
     reader.onload = () => {
       this.imageSrc = reader.result as string;
+      const image = new Image();
+      image.src = this.imageSrc;
+      image.onload = () => {
+        this.widthO = image.width;
+        this.heightO = image.height;
+        if (this.widthO > this.heightO){
+          this.widthO = 100 + '%';
+          this.heightO = 'auto';
+        }else{
+          this.heightO = 100 + '%';
+          this.widthO = 'auto';
+        }
+
+        console.log(image.width, image.height, this.widthO, this.heightO);
+      };
     };
     console.log(file, reader);
   }
@@ -102,33 +121,61 @@ export class TestComponent implements OnInit, AfterViewInit {
   // }
 
   btnBack(){
-    this.widthA = 100;
-    this.top = 0;
-    this.left = 0;
+    if(this.widthO !== 'auto'){
+      this.widthO = 100 + '%';
+      this.perzent = 100;
+    }else{
+      this.heightO = 100 + '%';
+      this.perzent = 100;
+      this.top = 0;
+      this.left = 0;
+    }
+    console.log(this.widthO, this.heightO, this.perzent)
   }
 
   btnPlus(){
-    this.widthA = this.widthA + 10;
-    this.heightA = this.heightA + 10;
-    console.log(this.widthA)
-    console.log(this.width)
+    if(this.widthO !== 'auto'){
+      this.widthO = (this.perzent += 10) + '%';
+    }else{
+      this.heightO = (this.perzent += 10) + '%';
+    }
+    console.log(this.widthO)
   }
 
   btnMinus(){
-    this.widthA = this.widthA - 10;
+    if(this.heightO !== 'auto'){
+      this.heightO = (this.perzent -= 10) + '%';
+    }else{
+      this.widthO = (this.perzent -= 10) + '%';
+    }
+    console.log(this.heightO)
   }
 
   btnUp(){
-    this.top = this.top - 1;
+    this.top = this.top - 2;
   }
   btnDown(){
-    this.top = this.top + 1;
+    this.top = this.top + 2;
   }
   btnLeft(){
-    this.left = this.left - 1;
+    this.left = this.left - 2;
   }
   btnRight(){
-    this.left = this.left + 1;
+    this.left = this.left + 2;
+  }
+
+  btnFit(){
+    if(this.widthO !== 'auto'){
+      this.widthO = 'auto';
+      this.heightO = 100 + '%';
+      this.top = 0;
+      this.left = 0;
+    }else{
+      this.widthO = 100 + '%';
+      this.heightO = 'auto';
+      this.top = 0;
+      this.left = 0;
+    }
   }
 
 
