@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit, HostListener } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit, HostListener, Output, EventEmitter } from '@angular/core';
 
 const enum Status {
   OFF = 0,
@@ -25,6 +25,8 @@ export class TestComponent implements OnInit, AfterViewInit {
   private mouseClick!: {x: number, y: number, left: number, top: number}
 
   imageSrc: string = '';
+  widthA = 100;
+  heightA = '';
 
   onFileSelected(event: any) {
     const file = event.target.files[0];
@@ -100,18 +102,39 @@ export class TestComponent implements OnInit, AfterViewInit {
   // }
 
   btnBack(){
-    this.imageSrc;
+    this.widthA = 100;
+    this.top = 0;
+    this.left = 0;
+  }
+
+  btnPlus(){
+    this.widthA = this.widthA + 10;
+    this.heightA = this.heightA + 10;
+    console.log(this.widthA)
+    console.log(this.width)
+  }
+
+  btnMinus(){
+    this.widthA = this.widthA - 10;
   }
 
   btnUp(){
-    this.width = this.width + 10;
-    this.height = this.height + 10;
+    this.top = this.top - 1;
+  }
+  btnDown(){
+    this.top = this.top + 1;
+  }
+  btnLeft(){
+    this.left = this.left - 1;
+  }
+  btnRight(){
+    this.left = this.left + 1;
   }
 
-  btnDown(){
-    this.width = this.width - 10;
-    this.height = this.height - 10;
-  }
+
+
+
+
 
 
 

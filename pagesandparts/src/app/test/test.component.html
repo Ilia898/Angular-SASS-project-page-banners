@@ -1,12 +1,21 @@
-<div #box class="resizable-draggable">
+
+
+  <div #box class="resizable-draggable"
+  [style.width.px]="width"
+  [style.height.px]="height">
+
     <div *ngIf="imageSrc" class="image-div"
     [style.width.px]="width"
     [style.height.px]="height"
+
+
+    ><img [src]="imageSrc"
+    [style.width.%]="widthA"
+    [style.height.auto]="heightA"
     [style.transform]="'translate3d('+ left + 'px,' + top + 'px,' + '0px)'"
     [class.active]="status === 1 || status === 2"
     (mousedown)="setStatus($event, 2)"
-    (window:mouseup)="setStatus($event, 0)"
-    ><img [src]="imageSrc"></div>
+    (window:mouseup)="setStatus($event, 0)"></div>
 </div>
 
 <input #_fileInput type="file" (change)="onFileSelected($event)" accept="image/*" hidden>
@@ -14,6 +23,11 @@
 <button  (click)="_fileInput.click()">
   Select File
 </button>
- <button (click)="btnUp()">up</button>
- <button (click)="btnDown()">down</button>
- <button (click)="btnBack()">back</button>
+
+<button (click)="btnUp()">up</button>
+<button (click)="btnDown()">down</button>
+<button (click)="btnLeft()">left</button>
+<button (click)="btnRight()">rigth</button>
+<button (click)="btnPlus()">plus</button>
+<button (click)="btnMinus()">minus</button>
+<button (click)="btnBack()">back</button>
