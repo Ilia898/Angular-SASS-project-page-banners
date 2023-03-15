@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit, HostListener, Output, EventEmitter } from '@angular/core';
-
+import {faMagnifyingGlassPlus, faMagnifyingGlassMinus, faArrowDown, faArrowUp, faArrowLeft, faArrowRight, faXmark} from '@fortawesome/free-solid-svg-icons';
 const enum Status {
   OFF = 0,
   RESIZE = 1,
@@ -12,6 +12,15 @@ const enum Status {
   styleUrls: ['./test.component.scss']
 })
 export class TestComponent implements OnInit, AfterViewInit {
+
+
+  iconPlus = faMagnifyingGlassPlus;
+  iconMinus = faMagnifyingGlassMinus;
+  iconDown = faArrowDown;
+  iconUp = faArrowUp;
+  iconLeft = faArrowLeft;
+  iconRight = faArrowRight;
+  iconX = faXmark;
 
   @Input('width') public width!: number;
   @Input('height') public height!: number;
