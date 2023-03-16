@@ -35,6 +35,8 @@ export class TestComponent implements OnInit, AfterViewInit {
   private mouseClick!: {x: number, y: number, left: number, top: number}
 
   imageSrc: string = '';
+  imgHidden = false;
+  dialogHidden = false;
   widthO: any;
   heightO: any;
   perzent = 100;
@@ -63,6 +65,8 @@ export class TestComponent implements OnInit, AfterViewInit {
         console.log(image.width, image.height, this.widthO, this.heightO);
       };
     };
+    this.dialogHidden = true;
+
     console.log(file, reader);
   }
 
@@ -95,44 +99,20 @@ export class TestComponent implements OnInit, AfterViewInit {
   @HostListener('window:mousemove', ['$event'])
   onMouseMove(event: MouseEvent){
     this.mouse = { x: event.clientX, y: event.clientY };
-
-    // if(this.status === Status.RESIZE) this.resize();
     if(this.status === Status.MOVE) this.move();
   }
-
-  // private resize(){
-  //   if(this.resizeCondMeet()){
-  //     this.width = Number(this.mouse.x > this.boxPosition.left) ? this.mouse.x - this.boxPosition.left : 0;
-  //     this.height = Number(this.mouse.y > this.boxPosition.top) ? this.mouse.y - this.boxPosition.top : 0;
-  //   }
-  // }
-
-  // private resizeCondMeet(){
-  //   return (this.mouse.x < this.containerPos.right && this.mouse.y < this.containerPos.bottom);
-  // }
 
   private move(){
       this.left = this.mouseClick.left + (this.mouse.x - this.mouseClick.x);
       this.top = this.mouseClick.top + (this.mouse.y - this.mouseClick.y);
   }
 
-  // private moveCondMeet(){
-  //   const offsetLeft = this.mouseClick.x - this.boxPosition.left;
-  //   const offsetRight = this.width - offsetLeft;
-  //   const offsetTop = this.mouseClick.y - this.boxPosition.top;
-  //   const offsetBottom = this.height - offsetTop;
-  //   return (
-  //     this.mouse.x > this.containerPos.left + offsetLeft &&
-  //     this.mouse.x < this.containerPos.right - offsetRight &&
-  //     this.mouse.y > this.containerPos.top + offsetTop &&
-  //     this.mouse.y < this.containerPos.bottom - offsetBottom
-  //     );
-  // }
-
   btnBack(){
     if(this.widthO !== 'auto'){
       this.widthO = 100 + '%';
       this.perzent = 100;
+      this.top = 0;
+      this.left = 0;
     }else{
       this.heightO = 100 + '%';
       this.perzent = 100;
@@ -185,6 +165,19 @@ export class TestComponent implements OnInit, AfterViewInit {
       this.top = 0;
       this.left = 0;
     }
+  }
+
+  btnFertig(){
+    this.imgHidden = true;
+    this.dialogHidden = false;
+  }
+
+  dialogClose(){
+    this.dialogHidden = false;
+  }
+
+  btnX(){
+    this.imgHidden = false;
   }
 
 

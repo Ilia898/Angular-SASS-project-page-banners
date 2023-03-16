@@ -1,4 +1,4 @@
-<div class="main-container">
+<div *ngIf="dialogHidden" class="main-container">
   <div class="dialog-block">
 
     <div class="btn-block1">
@@ -7,9 +7,6 @@
         <button (click)="btnMinus()"><fa-icon [icon]="iconMinus"></fa-icon></button>
         <button (click)="btnBack()">Zurück</button>
         <button (click)="btnFit()">Fit</button>
-      </div>
-      <div class="btn-x">
-        <button (click)="btnPlus()"><fa-icon [icon]="iconX"></fa-icon></button>
       </div>
     </div>
 
@@ -37,14 +34,40 @@
         (window:mouseup)="setStatus($event, 0)"></div>
         <input #_fileInput type="file" (change)="onFileSelected($event)" accept="image/*" hidden>
 
-        <button  (click)="_fileInput.click()">
+        <button #_dateiAus (click)="_fileInput.click()">
           Datei auswählen
         </button>
       </div>
     </div>
     <div class="btn-block3">
-      <button (click)="btnBack()">Löschen</button>
-      <button (click)="btnFit()">Fertig</button>
+      <button (click)="dialogClose()">Löschen</button>
+      <button (click)="btnFertig()">Fertig</button>
     </div>
   </div>
 </div>
+
+<div class="cropped-image-block">
+  <div class="cropped-image"
+  [ngStyle]="{backgroundImage:'url(../../assets/cropper/little-girl-winter-knitted-hat-sweater.jpg)'}"
+  [style.width.px]="width"
+  [style.height.px]="height">
+
+  <div *ngIf="imgHidden" class="image-div"
+  [style.width.px]="width"
+  [style.height.px]="height"
+  ><img [src]="imageSrc"
+  [style.width]="widthO"
+  [style.height]="heightO"
+  [style.transform]="'translate3d('+ left + 'px,' + top + 'px,' + '0px)'"
+  [class.active]="status === 1 || status === 2"
+  (mousedown)="setStatus($event, 2)"
+  (window:mouseup)="setStatus($event, 0)"></div>
+  <input #_fileInput type="file" (change)="onFileSelected($event)" accept="image/*"  hidden>
+
+  <button class="btn-datei" (click)="_fileInput.click()">
+    Datei auswählen
+  </button>
+  <button *ngIf="imageSrc" class="btn-x" (click)="btnX()"><fa-icon [icon]="iconX"></fa-icon></button>
+</div>
+</div>
+
