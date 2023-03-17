@@ -61,10 +61,9 @@ export class TestComponent implements OnInit, AfterViewInit {
           this.heightO = 100 + '%';
           this.widthO = 'auto';
         }
-
-        console.log(image.width, image.height, this.widthO, this.heightO);
       };
     };
+
     this.dialogHidden = true;
 
     console.log(file, reader);
@@ -107,20 +106,6 @@ export class TestComponent implements OnInit, AfterViewInit {
       this.top = this.mouseClick.top + (this.mouse.y - this.mouseClick.y);
   }
 
-  btnBack(){
-    if(this.widthO !== 'auto'){
-      this.widthO = 100 + '%';
-      this.perzent = 100;
-      this.top = 0;
-      this.left = 0;
-    }else{
-      this.heightO = 100 + '%';
-      this.perzent = 100;
-      this.top = 0;
-      this.left = 0;
-    }
-    console.log(this.widthO, this.heightO, this.perzent)
-  }
 
   btnPlus(){
     if(this.widthO !== 'auto'){
@@ -128,7 +113,6 @@ export class TestComponent implements OnInit, AfterViewInit {
     }else{
       this.heightO = (this.perzent += 10) + '%';
     }
-    console.log(this.widthO)
   }
 
   btnMinus(){
@@ -137,7 +121,6 @@ export class TestComponent implements OnInit, AfterViewInit {
     }else{
       this.widthO = (this.perzent -= 10) + '%';
     }
-    console.log(this.heightO)
   }
 
   btnUp(){
@@ -167,6 +150,18 @@ export class TestComponent implements OnInit, AfterViewInit {
     }
   }
 
+  btnBack(){
+    if(this.widthO !== 'auto'){
+      this.widthO = 100 + '%';
+      this.top = 0;
+      this.left = 0;
+    }else{
+      this.heightO = 100 + '%';
+      this.top = 0;
+      this.left = 0;
+    }
+  }
+
   btnFertig(){
     this.imgHidden = true;
     this.dialogHidden = false;
@@ -177,17 +172,8 @@ export class TestComponent implements OnInit, AfterViewInit {
   }
 
   btnX(){
+    this.imageSrc = '';
     this.imgHidden = false;
+
   }
-
-
-
-
-
-
-
-
-
-
-
 }

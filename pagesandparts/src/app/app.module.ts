@@ -16,21 +16,18 @@ import { registerLocaleData } from '@angular/common';
 import localeDe from '@angular/common/locales/de';
 import { NichtGefundenComponent } from './pages/nicht-gefunden/nicht-gefunden.component';
 import { WarenkorbComponent } from './pages/warenkorb/warenkorb.component';
-import { TestComponent } from './test/test.component';
-import { ImgCropperModule } from './pages/img-cropper/img-cropper.module';
-import { CropperTestComponent } from './cropper-test/cropper-test.component';
+import { EditorModule } from './pages/editor/editor.module';
 
 
 registerLocaleData(localeDe, 'de-DE');
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     ProductComponent,
     NichtGefundenComponent,
     WarenkorbComponent,
-    TestComponent,
-      CropperTestComponent
+
    ],
 
   imports: [
@@ -39,7 +36,8 @@ registerLocaleData(localeDe, 'de-DE');
     FontAwesomeModule,
     MeinKontoModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    EditorModule
 
   ],
 
