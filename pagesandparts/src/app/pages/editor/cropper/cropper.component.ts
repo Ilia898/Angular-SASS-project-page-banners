@@ -7,7 +7,7 @@ const enum Status {
 }
 
 @Component({
-  selector: 'app-test',
+  selector: 'app-cropper',
   templateUrl: './cropper.component.html',
   styleUrls: ['./cropper.component.scss']
 })
@@ -27,6 +27,8 @@ export class TestComponent implements OnInit, AfterViewInit {
   @Input('left') public left!: number;
   @Input('top') public top!: number;
   @Input('right') public right!: number;
+  @Input('posTop') public posTop!: number;
+  @Input('posLeft') public posLeft!: number;
   @ViewChild("box") public box!: ElementRef;
   private boxPosition!: { left: number, top: number };
   private containerPos!: { left: number, top: number, right: number, bottom: number };

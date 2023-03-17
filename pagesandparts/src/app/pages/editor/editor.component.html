@@ -1,3 +1,26 @@
-<div class="box-container">
+<!-- <div class="box-container">
   <app-test  [width]="200" [height]="250" [left]="0" [top]="0" [right]="0"></app-test>
+</div> -->
+
+<div class="main-container">
+  <div class="header">
+    <p>Personalisieren <span>Sie das Magazin</span></p>
+  </div>
+  <div class="pages">
+    <div class="pages-block">
+      <div class="page">
+        <img class="cropper-img" src="../../assets/editor-image/journal-page-image/page-.png" alt="">
+        <app-cropper
+        class="cropper"
+        [width]="303"
+        [height]="238"
+        [left]="0"
+        [top]="0"
+        [posTop]="-150"
+        [posLeft]="0"
+        ></app-cropper>
+      </div>
+    </div>
+    <div class="n-block"></div>
+  </div>
 </div>

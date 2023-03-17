@@ -1,0 +1,21 @@
+{
+  "pagesBlock": [
+    {
+      "id": "1",
+      "imgUrl": "../../assets/editor-image/journal-page-image/page-.png",
+      "cropper":[
+        {"width": 303, "height": 238, "top": 0, "left": 0},
+        {"width": 144, "height": 128, "top": 0, "left": 0}
+      ]
+    },
+
+    {
+      "id": "9",
+      "imgUrl": "../../assets/editor-image/journal-page-image/page-9.png",
+      "cropper":[
+        {"width": 302, "height": 252, "top": 0, "left": 0},
+        {"width": 144, "height": 128, "top": 0, "left": 0}
+      ]
+    }
+  ]
+}

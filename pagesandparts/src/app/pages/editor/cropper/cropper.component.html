@@ -46,7 +46,10 @@
   </div>
 </div>
 
-<div #box class="cropped-image-block">
+<div #box class="cropped-image-block"
+[style.margin-top.%]="posTop"
+[style.margin-left.%]="posLeft">
+
   <div class="cropped-image"
   [ngStyle]="{backgroundImage:'url(../../../assets/cropper/little-girl-winter-knitted-hat-sweater.jpg)'}"
   [style.width.px]="width"
