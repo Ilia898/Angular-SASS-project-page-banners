@@ -1,11 +1,43 @@
-.page{
-  width: max-content;
-  height: max-content;
-  margin:auto;
-  background: red;
+@import '../../config-sass/index.scss';
 
-  img{
-    height: auto;
-    max-width: 350px;
+.main-container{
+  margin: auto;
+  background: #F1E7FF;
+
+  .header{}
+
+  .pages{
+    display: flex;
+    height: 540px;
+    margin: auto;
+    background: #F1E7FF;
+
+    .pages-block{
+      background: #DBDBDB;
+
+      .page{
+        width: max-content;
+        height: max-content;
+        margin: auto;
+
+        .cropper-img{
+          margin: auto;
+
+          img{
+            height: auto;
+            max-width: 300px;
+          }
+        }
+
+        .cropper{
+
+        }
+      }
+    }
+
+    .n-block{
+
+    }
   }
 }
+
