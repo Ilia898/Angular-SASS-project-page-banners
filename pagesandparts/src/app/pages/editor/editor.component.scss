@@ -13,14 +13,18 @@
     background: #F1E7FF;
 
     .pages-block{
+      display: flex;
+      margin: auto;
+      padding: 2% 0;
       background: #DBDBDB;
 
       .page{
         width: max-content;
-        height: max-content;
+        height: 428px;
         margin: auto;
 
         .cropper-img{
+          position: relative;
           margin: auto;
 
           img{
@@ -30,8 +34,6 @@
         }
 
         .cropper{
-          position: absolute;
-          top: 0;
 
         }
       }
