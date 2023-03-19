@@ -4,17 +4,93 @@
       "id": "1",
       "imgUrl": "../../assets/editor-image/journal-page-image/page-.png",
       "cropper":[
-        {"width": 303, "height": 238, "top": 0, "left": 0},
-        {"width": 144, "height": 128, "top": 0, "left": 0}
+        {"width": 256, "height": 201, "top": 0, "left": 0, "posTop": -111, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0}
       ]
     },
 
     {
-      "id": "9",
-      "imgUrl": "../../assets/editor-image/journal-page-image/page-9.png",
+      "id": "2",
+      "imgUrl": "../../assets/editor-image/journal-page-image/page-2.png",
       "cropper":[
-        {"width": 302, "height": 252, "top": 0, "left": 0},
-        {"width": 144, "height": 128, "top": 0, "left": 0}
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0}
+      ]
+    },
+
+    {
+      "id": "3",
+      "imgUrl": "../../assets/editor-image/journal-page-image/page-3.png",
+      "cropper":[
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0}
+
+      ]
+    },
+
+    {
+      "id": "4",
+      "imgUrl": "../../assets/editor-image/journal-page-image/page-4.png",
+      "cropper":[
+        {"width": 80, "height": 74, "top": 0, "left": 0, "posTop": -130.5, "posLeft": -17.5},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0}
+      ]
+    },
+
+    {
+      "id": "5",
+      "imgUrl": "../../assets/editor-image/journal-page-image/page-5.png",
+      "cropper":[
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0}
+      ]
+    },
+
+    {
+      "id": "6",
+      "imgUrl": "../../assets/editor-image/journal-page-image/page-6.png",
+      "cropper":[
+        {"width": 122, "height": 111, "top": 0, "left": 0, "posTop": -46.5, "posLeft": -45},
+        {"width": 123, "height": 110, "top": 0, "left": 0, "posTop": 36.7, "posLeft": 45},
+        {"width": 257, "height": 214, "top": 0, "left": 0, "posTop": -111, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0}
+
+      ]
+    },
+
+    {
+      "id": "7",
+      "imgUrl": "../../assets/editor-image/journal-page-image/page-7.png",
+      "cropper":[
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0}
       ]
     }
   ]
