@@ -38,9 +38,35 @@
         }
       }
     }
+  }
 
-    .n-block{
+  .n-block{
+    display: flex;
+    font-family: Nregular;
 
+    .arrow-left{
+      margin: auto;
+    }
+
+    .number-block{
+
+      .page-number{
+        display: inline-block;
+        margin: 3px;
+        border-bottom: 1px solid $myPrimary1;
+        cursor: pointer;
+
+        span{
+          padding: 15px ;
+          text-align: center;
+        }
+
+        &:hover{background: $myPrimary1; color: white; border-radius: 2px;}
+      }
+    }
+
+    .arrow-right{
+      margin: auto;
     }
   }
 }
