@@ -16,25 +16,42 @@
       display: flex;
       margin: auto;
       padding: 2% 0;
+      justify-content: center;
       background: #DBDBDB;
 
       .page{
         width: max-content;
         height: 428px;
-        margin: auto;
+        margin: auto 0;
 
-        .cropper-img{
-          position: relative;
-          margin: auto;
+        .img-cropper{
+          display: inline-flex;
 
-          img{
-            height: auto;
-            max-width: 300px;
+          .page-left{
+
+            .cropper-img{
+              position: relative;
+              margin: auto 2px;
+
+              img{
+                height: auto;
+                max-width: 300px;
+              }
+            }
           }
-        }
 
-        .cropper{
+          .page-right{
 
+            .cropperi-img{
+              position: relative;
+              margin: auto 2px;
+
+                img{
+                height: auto;
+                max-width: 300px;
+              }
+            }
+          }
         }
       }
     }

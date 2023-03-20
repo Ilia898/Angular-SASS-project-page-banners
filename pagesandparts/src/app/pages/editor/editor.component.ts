@@ -10,7 +10,7 @@ import pagesBlock from '../../Json/editor.json';
 export class EditorComponent implements OnInit {
 
   pagesBlock = pagesBlock.pagesBlock;
-  pagesCropper = pagesBlock.pagesBlock;
+  pageHidden = 0;
   btnLeft = faChevronLeft;
   btnRight = faChevronRight;
 
@@ -27,8 +27,13 @@ export class EditorComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  pageN(i: any){
+    this.pageHidden = i;
+  }
+
 test(){
-  console.log(this.pagesBlock, this.pagesCropper)
+  console.log(this.pagesBlock[0], this.pageNumber[0])
 }
 
 
