@@ -125,17 +125,19 @@
       </div>
     </div>
   </div>
-  <div class="col-12-xs n-block">
+  <div class="col-10-xs n-block">
     <div class="arrow-left" (click)="btnEventArrow(pageHidden - 1)">
       <fa-icon [icon]="btnLeft"></fa-icon>
     </div>
-    <div class="page-dots" *ngIf="pageHidden !== 0">
-      <div (click)="btnEventArrow(0)">
-        <span>cover</span>
-      </div>
-      <span class="dots">...</span>
-    </div>
+
     <div class="number-block">
+      <div class="page-dots" *ngIf="pageHidden > 0">
+        <div (click)="btnEventArrow(0)">
+          <span>cover</span>
+        </div>
+        <span class="dots">. . .</span>
+      </div>
+
       <div class="page-number"
       *ngFor="let pageNumber of pageNumber; let i = index"
       (click)="setActiveButton(i)" >
@@ -144,14 +146,16 @@
         [ngClass]="{'active': pageHidden === i}"
         >{{ pageNumber }}</span>
       </div>
-    </div>
 
-    <div class="page-dots" *ngIf="pageHidden !== 27">
-      <span class="dots">...</span>
-      <div (click)="btnEventArrow(27)">
-        <span>{{pageNumber[27]}}</span>
+      <div class="page-dots" *ngIf="pageHidden < 27">
+        <span class="dots">. . .</span>
+        <div (click)="btnEventArrow(27)">
+          <span>{{pageNumber[27]}}</span>
+        </div>
       </div>
     </div>
+
+
     <div class="arrow-right" (click)="btnEventArrow(pageHidden + 1)">
       <fa-icon [icon]="btnRight"></fa-icon>
     </div>
