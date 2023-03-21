@@ -65,26 +65,58 @@
       margin: auto;
     }
 
-    .number-block{
+    .page-dots{
+      display: flex;
+      padding: 5px;
 
-      .page-number{
-        display: inline-block;
+      span{
+        display: block;
+        width: 60px;
         margin: 3px;
+        padding: 0 7%;
         border-bottom: 1px solid $myPrimary1;
+        text-align: center;
         cursor: pointer;
-
-        span{
-          padding: 15px ;
-          text-align: center;
-        }
 
         &:hover{background: $myPrimary1; color: white; border-radius: 2px;}
       }
+
+      .dots{
+        font-size: 20px;
+        border: none;
+        cursor: context-menu;
+
+      &:hover{background: none; color: black;}
+      }
     }
+
+    .number-block{
+      height: 30px;
+      overflow: hidden;
+
+      .page-number{
+        display: inline-block;
+        padding: 5px;
+
+        span{
+          display: block;
+          width: 60px;
+          margin: 3px;
+          padding: 0 7%;
+          border-bottom: 1px solid $myPrimary1;
+          text-align: center;
+          cursor: pointer;
+
+          &:hover{background: $myPrimary1; color: white; border-radius: 2px;}
+        }
+
+        .active{background: $myPrimary1; color: white; border-radius: 2px;}
+      }
+    }
+
 
     .arrow-right{
       margin: auto;
     }
   }
 }
-
