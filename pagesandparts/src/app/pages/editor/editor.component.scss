@@ -24,7 +24,21 @@
   margin: auto;
 
 
-  .header{}
+  .header{
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+    font-family: NsemiBold;
+    font-size: 27px;
+    color: $mytext;
+
+    h4{
+      margin: 0;
+      span{
+        color: $myPrimary1;
+      }
+    }
+  }
 
   .pages{
     display: flex;
