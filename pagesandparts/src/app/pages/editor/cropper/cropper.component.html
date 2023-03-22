@@ -34,10 +34,6 @@
           (mousedown)="setStatus($event, 2)"
           (window:mouseup)="setStatus($event, 0)"></div>
           <input #_fileInput type="file" (change)="onFileSelected($event)" accept="image/*" hidden>
-
-          <button #_dateiAus (click)="_fileInput.click()">
-            Datei auswählen
-          </button>
         </div>
       </div>
       <div class="btn-block3">
@@ -69,7 +65,8 @@
     <input #_fileInput type="file" (change)="onFileSelected($event)" accept="image/*"  hidden>
 
     <button class="btn-datei" (click)="_fileInput.click()">
-      Datei auswählen
+      <fa-icon [icon]="iconImg"></fa-icon>
+      <span>Datei auswählen</span>
     </button>
     <button *ngIf="imageSrc" class="btn-x" (click)="btnX()"><fa-icon [icon]="iconX"></fa-icon></button>
   </div>

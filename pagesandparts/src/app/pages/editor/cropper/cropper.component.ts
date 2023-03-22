@@ -1,5 +1,9 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit, HostListener, Output, EventEmitter } from '@angular/core';
-import {faMagnifyingGlassPlus, faMagnifyingGlassMinus, faArrowDown, faArrowUp, faArrowLeft, faArrowRight, faXmark} from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit, Input, ViewChild,
+         ElementRef, AfterViewInit, HostListener,
+         Output, EventEmitter } from '@angular/core';
+import {faMagnifyingGlassPlus, faMagnifyingGlassMinus,
+        faArrowDown, faArrowUp, faArrowLeft, faArrowRight,
+        faXmark, faImage} from '@fortawesome/free-solid-svg-icons';
 const enum Status {
   OFF = 0,
   RESIZE = 1,
@@ -21,6 +25,7 @@ export class TestComponent implements OnInit, AfterViewInit {
   iconLeft = faArrowLeft;
   iconRight = faArrowRight;
   iconX = faXmark;
+  iconImg = faImage;
 
   @Input('width') public width!: number;
   @Input('height') public height!: number;

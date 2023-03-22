@@ -129,7 +129,7 @@
     <div class="arrow-left" (click)="btnEventArrow(pageHidden - 1)">
       <fa-icon [icon]="btnLeft"></fa-icon>
     </div>
-
+<!--
     <div class="number-block">
       <div class="page-dots" *ngIf="pageHidden > 0">
         <div (click)="btnEventArrow(0)">
@@ -153,15 +153,21 @@
           <span>{{pageNumber[27]}}</span>
         </div>
       </div>
+    </div> -->
+
+    <div class="col-10-xs number-block">
+      <div class="page-number"
+      *ngFor="let pageNumber of pageNumber; let i = index"
+      (click)="setActiveButton(i)" >
+        <span
+        [ngClass]="{'active': pageHidden === i}"
+        >{{ pageNumber }}</span>
+      </div>
     </div>
+
 
 
     <div class="arrow-right" (click)="btnEventArrow(pageHidden + 1)">
       <fa-icon [icon]="btnRight"></fa-icon>
     </div>
   </div>
-
-
-
-
-<button (click)="test()">test</button>

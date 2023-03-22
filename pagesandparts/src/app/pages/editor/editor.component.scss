@@ -1,5 +1,25 @@
 @import '../../config-sass/index.scss';
 
+@mixin arrowBtn($posleft, $posright){
+  position: absolute;
+  top: 10px;
+  left: $posleft;
+  right: $posright;
+  margin: auto;
+  padding: 4px 8px;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 17px;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $myPrimary1;
+    color: white;
+    border-color: white;
+  }
+}
+
 .main-container{
   margin: auto;
 
@@ -59,63 +79,65 @@
 
   .n-block{
     display: flex;
+    position: relative;
     font-family: Nregular;
     margin: auto;
 
     .arrow-left{
-      margin: auto;
+      @include arrowBtn(0, auto);
+
     }
 
 
     .number-block{
-      display: flex;
-      height: 30px;
+      margin: auto;
 
-      .page-dots{
-        display: flex;
-        padding: 3px;
+      // .page-dots{
+      //   display: flex;
+      //   padding: 3px;
 
-        span{
-          display: block;
-          width: 60px;
-          padding: 0 7%;
-          border-bottom: 1px solid $myPrimary1;
-          text-align: center;
-          cursor: pointer;
+      //   span{
+      //     display: block;
+      //     width: 60px;
+      //     padding: 0 7%;
+      //     border-bottom: 1px solid $myPrimary1;
+      //     text-align: center;
+      //     cursor: pointer;
 
-          &:hover{background: $myPrimary1; color: white; border-radius: 2px;}
-        }
+      //     &:hover{background: $myPrimary1; color: white; border-radius: 2px;}
+      //   }
 
-        .dots{
-          border: none;
-          cursor: context-menu;
+      //   .dots{
+      //     border: none;
+      //     cursor: context-menu;
 
-        &:hover{background: none; color: black;}
-        }
-      }
+      //   &:hover{background: none; color: black;}
+      //   }
+      // }
 
       .page-number{
-        display: inline-block;
+        display:inline-flex;
 
         span{
           display: block;
           width: 60px;
-          margin: 5px;
+          margin: 4px;
           padding: 0 4%;
-          border-bottom: 1px solid $myPrimary1;
           text-align: center;
+          border-bottom: 1px solid $myPrimary1;
+          transition: background-color 0.6s ease;
           cursor: pointer;
 
-          &:hover{background: $myPrimary1; color: white; border-radius: 2px;}
+          &:hover{background-color: $myPrimary1; color: white; border-radius: 4px;}
         }
 
-        .active{background: $myPrimary1; color: white; border-radius: 2px;}
+        .active{background-color: $myPrimary1; color: white; border-radius: 4px;}
       }
     }
 
 
     .arrow-right{
-      margin: auto;
+      @include arrowBtn(auto, 0);
     }
   }
 }
