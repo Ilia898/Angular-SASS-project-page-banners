@@ -1,7 +1,3 @@
-<!-- <div class="box-container">
-  <app-test  [width]="200" [height]="250" [left]="0" [top]="0" [right]="0"></app-test>
-</div> -->
-
 <div class="col-11-xs main-container">
   <div class="col-10-xs header">
     <h4>Personalisieren <span>Sie das Magazin</span></h4>
@@ -9,119 +5,73 @@
   </div>
   <div class="col-12-xs pages">
     <div class="col-10-xs pages-block">
-      <div class="page" *ngFor="let page of pagesBlock; let i = index">
-        <div class="img-cropper" *ngIf=" i == pageHidden">
+      <div class="page">
+        <div class="img-cropper">
           <div class="page-left">
             <div class="cropper-img">
-              <img [src]="page.imgUrl" alt="">
+              <img [src]="pagesBlock[0].imgUrl" alt="">
             </div>
             <div class="cropper">
               <app-cropper
-              [width]="page.cropper[0].width"
-              [height]="page.cropper[0].height"
-              [left]="page.cropper[0].left"
-              [top]="page.cropper[0].top"
-              [posTop]="page.cropper[0].posTop"
-              [posLeft]="page.cropper[0].posLeft"
-              ></app-cropper>
-              <app-cropper
-               [width]="page.cropper[1].width"
-              [height]="page.cropper[1].height"
-              [left]="page.cropper[1].left"
-              [top]="page.cropper[1].top"
-              [posTop]="page.cropper[1].posTop"
-              [posLeft]="page.cropper[1].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper[2].width"
-              [height]="page.cropper[2].height"
-              [left]="page.cropper[2].left"
-              [top]="page.cropper[2].top"
-              [posTop]="page.cropper[2].posTop"
-              [posLeft]="page.cropper[2].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper[3].width"
-              [height]="page.cropper[3].height"
-              [left]="page.cropper[3].left"
-              [top]="page.cropper[3].top"
-              [posTop]="page.cropper[3].posTop"
-              [posLeft]="page.cropper[3].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper[4].width"
-              [height]="page.cropper[4].height"
-              [left]="page.cropper[4].left"
-              [top]="page.cropper[4].top"
-              [posTop]="page.cropper[4].posTop"
-              [posLeft]="page.cropper[4].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper[5].width"
-              [height]="page.cropper[5].height"
-              [left]="page.cropper[5].left"
-              [top]="page.cropper[5].top"
-              [posTop]="page.cropper[5].posTop"
-              [posLeft]="page.cropper[5].posLeft"[width]="256"
+              [width]="pagesBlock[0].cropper[0].width"
+              [height]="pagesBlock[0].cropper[0].height"
+              [left]="pagesBlock[0].cropper[0].left"
+              [top]="pagesBlock[0].cropper[0].top"
+              [posTop]="pagesBlock[0].cropper[0].posTop"
+              [posLeft]="pagesBlock[0].cropper[0].posLeft"
               ></app-cropper>
             </div>
           </div>
           <div class="page-right">
             <div class="cropperi-img">
-              <img [src]="page.imgUrl2" alt="">
+              <img [src]="pagesBlock[0].imgUrl2" alt="">
             </div>
             <div class="cropper2">
               <app-cropper
-              [width]="page.cropper2[0].width"
-              [height]="page.cropper2[0].height"
-              [left]="page.cropper2[0].left"
-              [top]="page.cropper2[0].top"
-              [posTop]="page.cropper2[0].posTop"
-              [posLeft]="page.cropper2[0].posLeft"
-              ></app-cropper>
-              <app-cropper
-               [width]="page.cropper2[1].width"
-              [height]="page.cropper2[1].height"
-              [left]="page.cropper2[1].left"
-              [top]="page.cropper2[1].top"
-              [posTop]="page.cropper2[1].posTop"
-              [posLeft]="page.cropper2[1].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper2[2].width"
-              [height]="page.cropper2[2].height"
-              [left]="page.cropper2[2].left"
-              [top]="page.cropper2[2].top"
-              [posTop]="page.cropper2[2].posTop"
-              [posLeft]="page.cropper2[2].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper2[3].width"
-              [height]="page.cropper2[3].height"
-              [left]="page.cropper2[3].left"
-              [top]="page.cropper2[3].top"
-              [posTop]="page.cropper2[3].posTop"
-              [posLeft]="page.cropper2[3].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper2[4].width"
-              [height]="page.cropper2[4].height"
-              [left]="page.cropper2[4].left"
-              [top]="page.cropper2[4].top"
-              [posTop]="page.cropper2[4].posTop"
-              [posLeft]="page.cropper2[4].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper2[5].width"
-              [height]="page.cropper2[5].height"
-              [left]="page.cropper2[5].left"
-              [top]="page.cropper2[5].top"
-              [posTop]="page.cropper2[5].posTop"
-              [posLeft]="page.cropper2[5].posLeft"[width]="256"
+              [width]="pagesBlock[0].cropper2[0].width"
+              [height]="pagesBlock[0].cropper2[0].height"
+              [left]="pagesBlock[0].cropper2[0].left"
+              [top]="pagesBlock[0].cropper2[0].top"
+              [posTop]="pagesBlock[0].cropper2[0].posTop"
+              [posLeft]="pagesBlock[0].cropper2[0].posLeft"
               ></app-cropper>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div class="page">
+        <div class="img-cropper">
+          <div class="page-left">
+            <div class="cropper-img">
+              <img [src]="pagesBlock[1].imgUrl" alt="">
+            </div>
+            <div class="cropper">
+              <app-cropper
+              [width]="pagesBlock[1].cropper[0].width"
+              [height]="pagesBlock[1].cropper[0].height"
+              [left]="pagesBlock[1].cropper[0].left"
+              [top]="pagesBlock[0].cropper[0].top"
+              [posTop]="pagesBlock[0].cropper[0].posTop"
+              [posLeft]="pagesBlock[0].cropper[0].posLeft"
+              ></app-cropper>
+            </div>
+          </div>
+          <div class="page-right">
+            <div class="cropperi-img">
+              <img [src]="pagesBlock[1].imgUrl2" alt="">
+            </div>
+            <div class="cropper2">
+              <app-cropper
+              [width]="pagesBlock[1].cropper2[0].width"
+              [height]="pagesBlock[1].cropper2[0].height"
+              [left]="pagesBlock[0].cropper2[0].left"
+              [top]="pagesBlock[0].cropper2[0].top"
+              [posTop]="pagesBlock[0].cropper2[0].posTop"
+              [posLeft]="pagesBlock[0].cropper2[0].posLeft"
+              ></app-cropper>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -130,31 +80,6 @@
     <div class="arrow-left" (click)="btnEventArrow(pageHidden - 1)">
       <fa-icon [icon]="btnLeft"></fa-icon>
     </div>
-<!--
-    <div class="number-block">
-      <div class="page-dots" *ngIf="pageHidden > 0">
-        <div (click)="btnEventArrow(0)">
-          <span>cover</span>
-        </div>
-        <span class="dots">. . .</span>
-      </div>
-
-      <div class="page-number"
-      *ngFor="let pageNumber of pageNumber; let i = index"
-      (click)="setActiveButton(i)" >
-        <span
-        *ngIf="i >= startPageNumber  && i <= endPageNumber"
-        [ngClass]="{'active': pageHidden === i}"
-        >{{ pageNumber }}</span>
-      </div>
-
-      <div class="page-dots" *ngIf="pageHidden < 27">
-        <span class="dots">. . .</span>
-        <div (click)="btnEventArrow(27)">
-          <span>{{pageNumber[27]}}</span>
-        </div>
-      </div>
-    </div> -->
 
     <div class="col-10-xs number-block">
       <div class="page-number"
@@ -166,9 +91,9 @@
       </div>
     </div>
 
-
-
     <div class="arrow-right" (click)="btnEventArrow(pageHidden + 1)">
       <fa-icon [icon]="btnRight"></fa-icon>
     </div>
-  </div>
+</div>
+
+<button (click)="test()">test</button>

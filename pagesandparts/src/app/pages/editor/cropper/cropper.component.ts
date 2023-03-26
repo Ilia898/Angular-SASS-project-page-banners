@@ -181,6 +181,5 @@ export class TestComponent implements OnInit, AfterViewInit {
   btnX(){
     this.imageSrc = '';
     this.imgHidden = false;
-
   }
 }

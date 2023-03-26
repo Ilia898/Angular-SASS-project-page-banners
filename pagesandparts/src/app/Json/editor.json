@@ -1,7 +1,7 @@
 {
   "pagesBlock": [
     {
-      "id": "1",
+      "id": 0,
       "imgUrl": "../../assets/editor-image/journal-page-image/page-.png",
       "cropper":[
         {"width": 256, "height": 201, "top": 0, "left": 0, "posTop": -110, "posLeft": 0},
@@ -24,7 +24,7 @@
 
 
     {
-      "id": "3",
+      "id": 1,
       "imgUrl": "../../assets/editor-image/journal-page-image/page-3.png",
       "cropper":[
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
@@ -49,7 +49,7 @@
     },
 
     {
-      "id": "5",
+      "id": 2,
       "imgUrl": "../../assets/editor-image/journal-page-image/page-5.png",
       "cropper":[
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
