@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
-import { Action } from 'rxjs/internal/scheduler/Action';
 import pagesBlock from '../../Json/editor.json';
 
 @Component({
@@ -28,18 +27,29 @@ export class EditorComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.showSlides(0);
+  }
+
+  btnEventArrow(pageN: number){
+    this.pageHidden = pageN;
+    this.showSlides(pageN);
+
+    console.log(pageN)
   }
 
 
   setActiveButton(index: number){
-    this.n = index;
-    if(index == this.pagesBlock[index].id){
-      this.slides[this.n].style.display = 'block';
+    this.showSlides(index);
+    this.pageHidden = index;
+  }
+
+  showSlides(n: any){
+    var i;
+    if(n > this.slides.length || n < 0){n = 0; this.pageHidden = 0}
+    for(i = 0; i < this.slides.length; i++){
+      this.slides[i].style.display = 'none';
     }
-
-
-  console.log(index, this.pagesBlock[this.n].id)
-
+    this.slides[n].style.display = 'block';
   }
 
 
@@ -55,19 +65,6 @@ export class EditorComponent implements OnInit {
   //   }
   // }
 
-  btnEventArrow(pageN: number){
-    this.pageHidden = pageN;
-    if(pageN >= 0 && pageN <= 27){
 
-      // this.setActiveButton(pageN);
-    }
-  }
-
-test(){
-  this.slides[1].style.display = 'block';
-  this.slides[0].style.display = 'none';
-  console.log(this.slides)
-
-}
 
 }
