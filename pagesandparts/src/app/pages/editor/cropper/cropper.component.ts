@@ -49,7 +49,6 @@ export class TestComponent implements OnInit, AfterViewInit {
   perzent = 100;
 
 
-
   onFileSelected(event: any) {
     const file = event.target.files[0];
     const reader = new FileReader();
