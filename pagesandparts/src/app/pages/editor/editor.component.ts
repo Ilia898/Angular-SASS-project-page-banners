@@ -30,28 +30,29 @@ export class EditorComponent implements OnInit, AfterViewInit{
 
   }
 
-
-
   btnEventArrow(pageN: number){
     this.pageHidden = pageN;
     this.showSlides(pageN);
 
-    console.log(pageN)
+    console.log(pageN, this.slides.length)
   }
 
 
   setActiveButton(index: number){
     this.showSlides(index);
     this.pageHidden = index;
+
+    console.log(index)
   }
 
   showSlides(n: any){
     var i;
-    if(n > this.slides.length || n < 0){n = 0; this.pageHidden = 0}
+    var leng = this.slides.length -1;
+    if (n > leng) {n = 0; this.pageHidden = 0;}
+    if (n < 0) {n = leng; this.pageHidden = leng;}
     for(i = 0; i < this.slides.length; i++){
       this.slides[i].style.display = 'none';
     }
     this.slides[n].style.display = 'block';
   }
-
 }
