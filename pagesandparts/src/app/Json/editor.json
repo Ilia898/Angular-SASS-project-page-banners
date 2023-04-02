@@ -110,7 +110,7 @@
 
       "imgUrl2": "../../assets/editor-image/journal-page-image/page-11.png",
       "cropper2":[
-        {"width": 80, "height": 74, "top": 0, "left": 0, "posTop": -130.5, "posLeft": -17.5},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
@@ -253,7 +253,7 @@
 
       "imgUrl2": "../../assets/editor-image/journal-page-image/page-23.png",
       "cropper2":[
-        {"width": 80, "height": 74, "top": 0, "left": 0, "posTop": -130.5, "posLeft": -17.5},
+        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
@@ -493,9 +493,9 @@
 
       "imgUrl2": "../../assets/editor-image/journal-page-image/page-43.png",
       "cropper2":[
-        {"width": 122, "height": 111, "top": 0, "left": 0, "posTop": -46.5, "posLeft": -45},
-        {"width": 123, "height": 110, "top": 0, "left": 0, "posTop": -37, "posLeft": 45},
-        {"width": 257, "height": 214, "top": 0, "left": 0, "posTop": -111, "posLeft": 0},
+        {"width": 258, "height": 214, "top": 0, "left": 0, "posTop": -92, "posLeft": 0},
+        {"width": 122, "height": 111, "top": 0, "left": 0, "posTop": -111, "posLeft": -44},
+        {"width": 123, "height": 110, "top": 0, "left": 0, "posTop": -36.5, "posLeft": 44.5},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0}
@@ -580,7 +580,7 @@
       "imgUrl": "../../assets/editor-image/journal-page-image/page-50.png",
       "cropper":[
         {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -72, "posLeft": 56},
-        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -102.5, "posLeft": 56},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
@@ -588,10 +588,10 @@
       ],
       "imgUrl2": "../../assets/editor-image/journal-page-image/page-51.png",
       "cropper2":[
-        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
-        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
-        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
-        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -72, "posLeft": -56},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -102.5, "posLeft": -56},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -2, "posLeft": 30},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -102.8, "posLeft": 30},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0}
       ]
@@ -650,8 +650,8 @@
       "id": 27,
       "imgUrl": "../../assets/editor-image/journal-page-image/page-56.png",
       "cropper":[
-        {"width": 256, "height": 201, "top": 0, "left": 0, "posTop": -110, "posLeft": 0},
-        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -76, "posLeft": 56},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -103, "posLeft": 56},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
@@ -659,10 +659,10 @@
       ],
       "imgUrl2": "../../assets/editor-image/journal-page-image/page-57.png",
       "cropper2":[
-        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
-        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
-        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
-        {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -76, "posLeft": -56},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -103, "posLeft": -56},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -1.5, "posLeft": 30},
+        {"width": 129, "height": 159, "top": 0, "left": 0, "posTop": -103.3, "posLeft": 30},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0},
         {"width": 0, "height": 0, "top": 0, "left": 0, "posTop": 0, "posLeft": 0}
       ]
