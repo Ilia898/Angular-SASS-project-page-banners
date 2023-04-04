@@ -1,0 +1,76 @@
+<div class="container">
+  <div *ngIf="dialogHidden" class="main-container">
+    <div class="dialog-block">
+
+      <div class="btn-block1">
+        <div class="btn-fit">
+          <button (click)="btnPlus()"><fa-icon [icon]="iconPlus"></fa-icon></button>
+          <button (click)="btnMinus()"><fa-icon [icon]="iconMinus"></fa-icon></button>
+          <button (click)="btnBack()">Zurück</button>
+          <button (click)="btnFit()">Fit</button>
+        </div>
+      </div>
+
+      <div class="btn-block2">
+        <button (click)="btnUp()"><fa-icon [icon]="iconUp"></fa-icon></button>
+        <button (click)="btnDown()"><fa-icon [icon]="iconDown"></fa-icon></button>
+        <button (click)="btnLeft()"><fa-icon [icon]="iconLeft"></fa-icon></button>
+        <button (click)="btnRight()"><fa-icon [icon]="iconRight"></fa-icon></button>
+      </div>
+
+      <div class="cropper-block">
+        <div #box class="resizable-draggable"
+          [style.width.px]="width"
+          [style.height.px]="height">
+
+          <div *ngIf="imageSrc" class="image-div"
+          [style.width.px]="width"
+          [style.height.px]="height"
+          ><img [src]="imageSrc"
+          [style.width]="widthO"
+          [style.height]="heightO"
+          [style.transform]="'translate3d('+ left + 'px,' + top + 'px,' + '0px)'"
+          [class.active]="status === 1 || status === 2"
+          (mousedown)="setStatus($event, 2)"
+          (window:mouseup)="setStatus($event, 0)"></div>
+          <input #_fileInput type="file" (change)="onFileSelected($event)" accept="image/*" hidden>
+        </div>
+      </div>
+      <div class="btn-block3">
+        <button (click)="dialogClose()">Löschen</button>
+        <button (click)="btnFertig()">Fertig</button>
+      </div>
+    </div>
+  </div>
+
+  <div #box class="cropped-image-block"
+  [style.margin-top.%]="posTop"
+  [style.margin-left.%]="posLeft">
+
+    <div class="cropped-image"
+    [ngStyle]="{backgroundImage:'url(../../../assets/cropper/little-girl-winter-knitted-hat-sweater.jpg)'}"
+    [style.width.px]="width"
+    [style.height.px]="height">
+
+    <div *ngIf="imgHidden" class="image-div"
+    [style.width.px]="width"
+    [style.height.px]="height"
+    ><img [src]="imageSrc"
+    [style.width]="widthO"
+    [style.height]="heightO"
+    [style.transform]="'translate3d('+ left + 'px,' + top + 'px,' + '0px)'"
+    [class.active]="status === 1 || status === 2"
+    (mousedown)="setStatus($event, 2)"
+    (window:mouseup)="setStatus($event, 0)"></div>
+    <input #_fileInput type="file" (change)="onFileSelected($event)" accept="image/*"  hidden>
+
+    <button class="btn-datei" (click)="_fileInput.click()">
+      <fa-icon [icon]="iconImg"></fa-icon>
+      <span>Datei auswählen</span>
+    </button>
+    <button *ngIf="imageSrc" class="btn-x" (click)="btnX()"><fa-icon [icon]="iconX"></fa-icon></button>
+  </div>
+  </div>
+</div>
+
+
