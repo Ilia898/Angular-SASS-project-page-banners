@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EditorComponent } from './editor.component';
+import { EditorSmComponent } from './editor-sm.component';
 import { TestComponent } from './cropper/cropper.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -9,7 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CommonModule,
     FontAwesomeModule
   ],
-  declarations: [EditorComponent, TestComponent],
-  exports: [EditorComponent]
+  declarations: [TestComponent, EditorSmComponent],
+  exports: [EditorSmComponent]
 })
-export class EditorModule { }
+export class EditorSmModule { }

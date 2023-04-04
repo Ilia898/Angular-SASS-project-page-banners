@@ -17,6 +17,7 @@ import localeDe from '@angular/common/locales/de';
 import { NichtGefundenComponent } from './pages/nicht-gefunden/nicht-gefunden.component';
 import { WarenkorbComponent } from './pages/warenkorb/warenkorb.component';
 import { EditorModule } from './pages/editor/editor.module';
+import { EditorSmModule } from './pages/editor copy/editor-sm.module';
 
 
 registerLocaleData(localeDe, 'de-DE');
@@ -37,7 +38,8 @@ registerLocaleData(localeDe, 'de-DE');
     MeinKontoModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    EditorModule
+    EditorModule,
+    EditorSmModule
 
   ],
 

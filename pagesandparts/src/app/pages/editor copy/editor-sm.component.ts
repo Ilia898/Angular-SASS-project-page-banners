@@ -3,12 +3,12 @@ import {faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
 import pagesBlock from '../../Json/editor.json';
 
 @Component({
-  selector: 'app-editor',
-  templateUrl: './editor.component.html',
-  styleUrls: ['./editor.component.scss']
+  selector: 'app-editor-sm',
+  templateUrl: './editor-sm.component.html',
+  styleUrls: ['./editor-sm.component.scss']
 })
 
-export class EditorComponent implements OnInit, AfterViewInit{
+export class EditorSmComponent implements OnInit, AfterViewInit{
 
   pagesBlock = pagesBlock.pagesBlock;
   pageHidden = 0;
