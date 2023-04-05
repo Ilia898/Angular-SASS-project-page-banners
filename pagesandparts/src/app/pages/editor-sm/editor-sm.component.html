@@ -5,10 +5,8 @@
   </div>
   <div class="col-12-xs pages">
     <div class="col-10-xs pages-block">
-
       <div class="page" *ngFor="let page of pagesBlock; let i = index">
         <div class="img-cropper">
-          <div class="page-left">
             <div class="cropper-img">
               <img [src]="page.imgUrl" alt="">
             </div>
@@ -22,7 +20,7 @@
               [posLeft]="page.cropper[0].posLeft"
               ></app-cropper>
               <app-cropper
-               [width]="page.cropper[1].width"
+              [width]="page.cropper[1].width"
               [height]="page.cropper[1].height"
               [left]="page.cropper[1].left"
               [top]="page.cropper[1].top"
@@ -62,62 +60,6 @@
               [posLeft]="page.cropper[5].posLeft"
               ></app-cropper>
             </div>
-          </div>
-          <div class="page-right">
-            <div class="cropperi-img">
-              <img [src]="page.imgUrl2" alt="">
-            </div>
-            <div class="cropper2">
-              <app-cropper
-              [width]="page.cropper2[0].width"
-              [height]="page.cropper2[0].height"
-              [left]="page.cropper2[0].left"
-              [top]="page.cropper2[0].top"
-              [posTop]="page.cropper2[0].posTop"
-              [posLeft]="page.cropper2[0].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper2[1].width"
-              [height]="page.cropper2[1].height"
-              [left]="page.cropper2[1].left"
-              [top]="page.cropper2[1].top"
-              [posTop]="page.cropper2[1].posTop"
-              [posLeft]="page.cropper2[1].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper2[2].width"
-              [height]="page.cropper2[2].height"
-              [left]="page.cropper2[2].left"
-              [top]="page.cropper2[2].top"
-              [posTop]="page.cropper2[2].posTop"
-              [posLeft]="page.cropper2[2].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper2[3].width"
-              [height]="page.cropper2[3].height"
-              [left]="page.cropper2[3].left"
-              [top]="page.cropper2[3].top"
-              [posTop]="page.cropper2[3].posTop"
-              [posLeft]="page.cropper2[3].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper2[4].width"
-              [height]="page.cropper2[4].height"
-              [left]="page.cropper2[4].left"
-              [top]="page.cropper2[4].top"
-              [posTop]="page.cropper2[4].posTop"
-              [posLeft]="page.cropper2[4].posLeft"
-              ></app-cropper>
-              <app-cropper
-              [width]="page.cropper2[5].width"
-              [height]="page.cropper2[5].height"
-              [left]="page.cropper2[5].left"
-              [top]="page.cropper2[5].top"
-              [posTop]="page.cropper2[5].posTop"
-              [posLeft]="page.cropper2[5].posLeft"
-              ></app-cropper>
-            </div>
-          </div>
         </div>
       </div>
     </div>

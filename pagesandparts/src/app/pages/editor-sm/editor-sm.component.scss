@@ -59,39 +59,18 @@
         margin: auto 0;
 
         .img-cropper{
-          display: inline-flex;
 
-          .page-left{
+          .cropper-img{
+            position: relative;
+            margin: auto 2px;
 
-            .cropper-img{
-              position: relative;
-              margin: auto 2px;
-
-              img{
-                height: auto;
-                max-width: 300px;
-              }
-            }
-          }
-
-          .page-right{
-
-            .cropperi-img{
-              position: relative;
-              margin: auto 2px;
-
-                img{
-                height: auto;
-                max-width: 300px;
-              }
+            img{
+              height: auto;
+              max-width: 300px;
             }
           }
         }
       }
-
-      // .active-page{
-      //   display: none;
-      // }
     }
   }
 
@@ -103,35 +82,10 @@
 
     .arrow-left{
       @include arrowBtn(0, auto);
-
     }
-
 
     .number-block{
       margin: auto;
-
-      // .page-dots{
-      //   display: flex;
-      //   padding: 3px;
-
-      //   span{
-      //     display: block;
-      //     width: 60px;
-      //     padding: 0 7%;
-      //     border-bottom: 1px solid $myPrimary1;
-      //     text-align: center;
-      //     cursor: pointer;
-
-      //     &:hover{background: $myPrimary1; color: white; border-radius: 2px;}
-      //   }
-
-      //   .dots{
-      //     border: none;
-      //     cursor: context-menu;
-
-      //   &:hover{background: none; color: black;}
-      //   }
-      // }
 
       .page-number{
         display:inline-flex;

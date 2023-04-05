@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit} from '@angular/core';
 import {faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
-import pagesBlock from '../../Json/editor.json';
+import pagesBlock from '../../Json/editor-sm.json';
 
 @Component({
   selector: 'app-editor-sm',
