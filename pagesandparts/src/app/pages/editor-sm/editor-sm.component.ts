@@ -48,11 +48,22 @@ export class EditorSmComponent implements OnInit, AfterViewInit{
   showSlides(n: any){
     var i;
     var leng = this.slides.length -1;
-    if (n > leng) {n = 0; this.pageHidden = 0;}
-    if (n < 0) {n = leng; this.pageHidden = leng;}
+
+    if (n > leng) {
+      n = 0;
+      this.pageHidden = 0;
+    }
+
+    if (n < 0) {
+      n = leng;
+      this.pageHidden = leng;
+    }
+
     for(i = 0; i < this.slides.length; i++){
+
       this.slides[i].style.display = 'none';
     }
+
     this.slides[n].style.display = 'block';
   }
 }

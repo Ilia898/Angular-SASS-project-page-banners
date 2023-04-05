@@ -130,16 +130,16 @@ export class TestComponent implements OnInit, AfterViewInit {
   }
 
   btnUp(){
-    this.top = this.top - 2;
+    this.top = this.top - 5;
   }
   btnDown(){
-    this.top = this.top + 2;
+    this.top = this.top + 5;
   }
   btnLeft(){
-    this.left = this.left - 2;
+    this.left = this.left - 5;
   }
   btnRight(){
-    this.left = this.left + 2;
+    this.left = this.left + 5;
   }
 
   btnFit(){
